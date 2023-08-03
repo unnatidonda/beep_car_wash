@@ -12,7 +12,9 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
-        children: [],
+        children: [
+          MediaQuery(data: , child: )
+        ],
       ),
     );
   }
