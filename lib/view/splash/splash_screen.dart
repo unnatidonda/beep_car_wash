@@ -14,6 +14,7 @@ class _SplashScreenState extends State<SplashScreen> {
     double screenHeight = size.height;
     double screenWidth = size.width;
     EdgeInsets devicePadding = MediaQuery.of(context).viewPadding;
+
     return Padding(
       padding: devicePadding,
       child: Scaffold(

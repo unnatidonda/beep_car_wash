@@ -1,6 +1,5 @@
+import 'package:beep_car_wash/view/splash/splash_screen.dart';
 import 'package:flutter/material.dart';
-
-import 'beep_car_wash_screen/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());
