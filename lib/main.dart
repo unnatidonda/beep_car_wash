@@ -1,4 +1,4 @@
-import 'package:beep_car_wash/view/onboarding_screen.dart';
+import 'package:beep_car_wash/view/onboarding_screen/onboarding_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {

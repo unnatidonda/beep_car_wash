@@ -49,6 +49,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 color: Color(0xFF898989),
               ),
             ),
+            const SizedBox(height: 50),
             ElevatedButton(
               style: ButtonStyle(
                 backgroundColor: const MaterialStatePropertyAll(Color(0xFF00AB6C)),
