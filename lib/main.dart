@@ -1,4 +1,4 @@
-import 'package:beep_car_wash/task_screen/cupertino_picker_screen.dart';
+import 'package:beep_car_wash/task_screen/date_picker_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const CupertinoPickerScreen(),
+      home: const DatePickerScreen(),
     );
   }
 }
