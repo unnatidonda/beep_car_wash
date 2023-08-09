@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../../res/constant/app_assets.dart';
+
 class SigInScreen extends StatefulWidget {
   const SigInScreen({super.key});
 
@@ -24,7 +26,7 @@ class _SigInScreenState extends State<SigInScreen> {
             Align(
               alignment: Alignment.center,
               child: Image.asset(
-                "assets/images/beep_text.png",
+                AppAssets.appBeepText,
                 height: screenWidth / 1.5,
                 width: screenWidth / 3.5,
               ),

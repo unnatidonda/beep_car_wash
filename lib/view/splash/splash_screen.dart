@@ -10,7 +10,7 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
-  Navigate() {
+  navigate() {
     Future.delayed(const Duration(seconds: 2), () {
       Navigator.pushAndRemoveUntil(
           context,
@@ -21,8 +21,10 @@ class _SplashScreenState extends State<SplashScreen> {
     });
   }
 
-  void initsate() {
-    Navigate();
+  @override
+  void initState() {
+    // TODO: implement initState
+    navigate();
     super.initState();
   }
 
