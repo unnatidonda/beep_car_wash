@@ -20,7 +20,7 @@ class _SigInScreenState extends State<SigInScreen> {
     EdgeInsets devicePadding = MediaQuery.of(context).viewPadding;
     return Scaffold(
       body: Padding(
-        padding: const EdgeInsets.all(8.0),
+        padding: const EdgeInsets.all(15),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           // mainAxisAlignment: MainAxisAlignment.center,
@@ -53,7 +53,7 @@ class _SigInScreenState extends State<SigInScreen> {
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit,\n sed do eiusmod tempor incididunt ut labore ...",
                 style: TextStyle(
                   color: AppColors.greyColor,
-                  fontSize: 15,
+                  fontSize: 14,
                   fontFamily: "Poppins",
                   fontWeight: FontWeight.w500,
                 ),
@@ -63,7 +63,12 @@ class _SigInScreenState extends State<SigInScreen> {
             ElevatedButton(
               style: ButtonStyle(
                 backgroundColor: const MaterialStatePropertyAll(AppColors.darkGreenColor),
-                shape: MaterialStatePropertyAll(RoundedRectangleBorder(borderRadius: BorderRadius.circular(5))),
+                fixedSize: MaterialStatePropertyAll(
+                  Size(screenWidth / 0.1, screenHeight / 16),
+                ),
+                shape: MaterialStatePropertyAll(
+                  RoundedRectangleBorder(borderRadius: BorderRadius.circular(5)),
+                ),
                 // fixedSize: MaterialStatePropertyAll(
                 // Size(width: 10, height!),
                 // ),
@@ -102,26 +107,93 @@ class _SigInScreenState extends State<SigInScreen> {
               width: double.infinity,
               decoration: BoxDecoration(
                 // color: AppColors.darkGreenColor,
-                borderRadius: BorderRadius.circular(15),
+                borderRadius: BorderRadius.circular(12),
                 border: Border.all(
                   color: AppColors.darkGreenColor,
-                  width: 1.5,
+                  width: 2,
                 ),
               ),
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Image.asset(
                     AppAssets.appgoogle,
                     height: screenHeight / 30,
-                    width: screenWidth / 3.5,
+                    width: screenWidth / 7.5,
                   ),
                   const Text(
                     textAlign: TextAlign.center,
                     AppStrings.google,
                     style: TextStyle(
                       fontSize: 17,
-                      color: AppColors.darkGreenColor,
-                      fontWeight: FontWeight.w500,
+                      color: AppColors.lightBlackColor,
+                      fontWeight: FontWeight.w600,
+                      fontFamily: "Poppins",
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(height: 20),
+            Container(
+              height: 56,
+              width: double.infinity,
+              decoration: BoxDecoration(
+                // color: AppColors.darkGreenColor,
+                borderRadius: BorderRadius.circular(12),
+                border: Border.all(
+                  color: AppColors.darkGreenColor,
+                  width: 2,
+                ),
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Image.asset(
+                    AppAssets.appgoogle,
+                    height: screenHeight / 30,
+                    width: screenWidth / 7.5,
+                  ),
+                  const Text(
+                    textAlign: TextAlign.center,
+                    AppStrings.google,
+                    style: TextStyle(
+                      fontSize: 17,
+                      color: AppColors.lightBlackColor,
+                      fontWeight: FontWeight.w600,
+                      fontFamily: "Poppins",
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(height: 20),
+            Container(
+              height: 56,
+              width: double.infinity,
+              decoration: BoxDecoration(
+                // color: AppColors.darkGreenColor,
+                borderRadius: BorderRadius.circular(12),
+                border: Border.all(
+                  color: AppColors.darkGreenColor,
+                  width: 2,
+                ),
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Image.asset(
+                    AppAssets.appgoogle,
+                    height: screenHeight / 30,
+                    width: screenWidth / 7.5,
+                  ),
+                  const Text(
+                    textAlign: TextAlign.center,
+                    AppStrings.google,
+                    style: TextStyle(
+                      fontSize: 17,
+                      color: AppColors.lightBlackColor,
+                      fontWeight: FontWeight.w600,
                       fontFamily: "Poppins",
                     ),
                   ),
