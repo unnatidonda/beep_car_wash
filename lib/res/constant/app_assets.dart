@@ -6,4 +6,6 @@ class AppAssets {
   static const String appBeepText = "assets/images/beep_text.png";
   static const String appWashYourCar = " assets/images/wash_your_car.png";
   static const String appgoogle = "assets/images/google.png";
+  static const String appFaceBook = "assets/images/facebook.png";
+  static const String appApple = "assets/images/apple.png";
 }
