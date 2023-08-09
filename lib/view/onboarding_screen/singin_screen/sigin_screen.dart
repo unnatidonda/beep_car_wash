@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 import '../../../res/constant/app_assets.dart';
+import '../../../res/constant/app_colors.dart';
+import '../../../res/constant/app_strings.dart';
 
 class SigInScreen extends StatefulWidget {
   const SigInScreen({super.key});
@@ -37,7 +39,7 @@ class _SigInScreenState extends State<SigInScreen> {
                 textAlign: TextAlign.start,
                 "Enter your phone number",
                 style: TextStyle(
-                  color: Color(0xFF212121),
+                  color: AppColors.lightBlackColor,
                   fontSize: 20,
                   fontFamily: "Poppins",
                   fontWeight: FontWeight.w500,
@@ -50,11 +52,80 @@ class _SigInScreenState extends State<SigInScreen> {
                 textAlign: TextAlign.start,
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit,\n sed do eiusmod tempor incididunt ut labore ...",
                 style: TextStyle(
-                  color: Color(0xFF898989),
+                  color: AppColors.greyColor,
                   fontSize: 15,
                   fontFamily: "Poppins",
                   fontWeight: FontWeight.w500,
                 ),
+              ),
+            ),
+            const SizedBox(height: 50),
+            ElevatedButton(
+              style: ButtonStyle(
+                backgroundColor: const MaterialStatePropertyAll(AppColors.darkGreenColor),
+                shape: MaterialStatePropertyAll(RoundedRectangleBorder(borderRadius: BorderRadius.circular(5))),
+                // fixedSize: MaterialStatePropertyAll(
+                // Size(width: 10, height!),
+                // ),
+              ),
+              // onPressed: onPress ?? () {},
+              onPressed: () {},
+              child: const Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    "Continue",
+                    style: TextStyle(
+                      fontSize: 17,
+                      color: AppColors.whiteColor,
+                      fontWeight: FontWeight.w500,
+                      fontFamily: "Poppins",
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(height: 20),
+            const Text(
+              textAlign: TextAlign.start,
+              "Or Sign In With",
+              style: TextStyle(
+                color: AppColors.greyColor,
+                fontSize: 16,
+                fontFamily: "Poppins",
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+            const SizedBox(height: 20),
+            Container(
+              height: 56,
+              width: double.infinity,
+              decoration: BoxDecoration(
+                // color: AppColors.darkGreenColor,
+                borderRadius: BorderRadius.circular(15),
+                border: Border.all(
+                  color: AppColors.darkGreenColor,
+                  width: 1.5,
+                ),
+              ),
+              child: Row(
+                children: [
+                  Image.asset(
+                    AppAssets.appgoogle,
+                    height: screenHeight / 30,
+                    width: screenWidth / 3.5,
+                  ),
+                  const Text(
+                    textAlign: TextAlign.center,
+                    AppStrings.google,
+                    style: TextStyle(
+                      fontSize: 17,
+                      color: AppColors.darkGreenColor,
+                      fontWeight: FontWeight.w500,
+                      fontFamily: "Poppins",
+                    ),
+                  ),
+                ],
               ),
             ),
           ],

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../res/constant/app_colors.dart';
+
 class OnboardingScreen extends StatefulWidget {
   const OnboardingScreen({super.key});
 
@@ -52,7 +54,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             const SizedBox(height: 50),
             ElevatedButton(
               style: ButtonStyle(
-                backgroundColor: const MaterialStatePropertyAll(Color(0xFF00AB6C)),
+                backgroundColor: const MaterialStatePropertyAll(AppColors.darkGreenColor),
                 shape: MaterialStatePropertyAll(RoundedRectangleBorder(borderRadius: BorderRadius.circular(5))),
                 // fixedSize: MaterialStatePropertyAll(
                 // Size(width: 10, height!),
