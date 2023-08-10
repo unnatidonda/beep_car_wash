@@ -1,3 +1,4 @@
+import 'package:beep_car_wash/view/onboarding_screen/singin_screen/register_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:intl_phone_number_input/intl_phone_number_input.dart';
 
@@ -263,26 +264,36 @@ class _SigInScreenState extends State<SigInScreen> {
                   ),
                 ),
                 const SizedBox(height: 30),
-                Align(
-                  alignment: Alignment.center,
-                  child: RichText(
-                    textAlign: TextAlign.center,
-                    text: const TextSpan(
-                      text: "Don’t have an account?",
-                      style: TextStyle(
-                        color: AppColors.greyColor,
-                        fontSize: 18,
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const RegisterScreen(),
                       ),
-                      children: [
-                        TextSpan(
-                          text: " Register",
-                          style: TextStyle(
-                            color: AppColors.darkGreenColor,
-                            fontSize: 18,
-                            fontWeight: FontWeight.w600,
-                          ),
+                    );
+                  },
+                  child: Align(
+                    alignment: Alignment.center,
+                    child: RichText(
+                      textAlign: TextAlign.center,
+                      text: const TextSpan(
+                        text: "Don’t have an account?",
+                        style: TextStyle(
+                          color: AppColors.greyColor,
+                          fontSize: 18,
                         ),
-                      ],
+                        children: [
+                          TextSpan(
+                            text: " Register",
+                            style: TextStyle(
+                              color: AppColors.darkGreenColor,
+                              fontSize: 18,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ),

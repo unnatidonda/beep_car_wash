@@ -5,6 +5,7 @@ class AppStrings {
   static const String loren = "Lorem ipsum dolor sit amet, consectetur adipiscing elit,\n sed do eiusmod tempor incididunt ut labore ...";
   static const String google = "google";
   static const String continuebeep = "Continue";
+  static const String CreateyourAccount = "Create your Account";
   static const String facebook = "Facebook";
   static const String apple = "apple ID";
 }

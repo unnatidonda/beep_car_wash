@@ -1,3 +1,4 @@
+import 'package:beep_car_wash/view/onboarding_screen/singin_screen/sigin_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../../res/constant/app_colors.dart';
@@ -61,7 +62,14 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 // ),
               ),
               // onPressed: onPress ?? () {},
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const SigInScreen(),
+                  ),
+                );
+              },
               child: const Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
