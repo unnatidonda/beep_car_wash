@@ -1,4 +1,7 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
+import 'package:pin_code_fields/pin_code_fields.dart';
 
 import '../../../res/constant/app_assets.dart';
 import '../../../res/constant/app_colors.dart';
@@ -11,7 +14,57 @@ class SignInOtpScreen extends StatefulWidget {
   State<SignInOtpScreen> createState() => _SignInOtpScreenState();
 }
 
+class PinCodeVerificationScreen extends StatefulWidget {
+  const PinCodeVerificationScreen({
+    Key? key,
+    this.phoneNumber,
+  }) : super(key: key);
+
+  final String? phoneNumber;
+
+  @override
+  State<PinCodeVerificationScreen> createState() => _PinCodeVerificationScreenState();
+}
+
+abstract class _PinCodeVerificationScreenState extends State<PinCodeVerificationScreen> {
+  TextEditingController textEditingController = TextEditingController();
+
+  // ..text = "123456";
+
+  // ignore: close_sinks
+  StreamController<ErrorAnimationType>? errorController;
+
+  bool hasError = false;
+  String currentText = "";
+  final formKey = GlobalKey<FormState>();
+
+  @override
+  void initState() {
+    errorController = StreamController<ErrorAnimationType>();
+    super.initState();
+  }
+
+  @override
+  void dispose() {
+    errorController!.close();
+
+    super.dispose();
+  }
+
+  // snackBar Widget
+  snackBar(String? message) {
+    return ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: Text(message!),
+        duration: const Duration(seconds: 2),
+      ),
+    );
+  }
+}
+
 class _SignInOtpScreenState extends State<SignInOtpScreen> {
+  get textEditingController => null;
+
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -229,6 +282,7 @@ class _SignInOtpScreenState extends State<SignInOtpScreen> {
     height: 50,
     child: TextButton(
     onPressed: () {
+    var formKey;
     formKey.currentState!.validate();
     // conditions for validating
     if (currentText.length != 6 || currentText != "123456") {
@@ -289,6 +343,7 @@ class _SignInOtpScreenState extends State<SignInOtpScreen> {
     child: const Text("Set Text"),
     onPressed: () {
     setState(() {
+    var textEditingController;
     textEditingController.text = "123456";
     });
     },
@@ -299,9 +354,14 @@ class _SignInOtpScreenState extends State<SignInOtpScreen> {
     ],
     ),
     ),
+    ),
+    ),
           ],
         ),
       ),
     );
   }
+}
+
+class Constants {
 }
