@@ -1,4 +1,4 @@
-import 'package:beep_car_wash/view/onboarding_screen/singin_screen/sign_in_otp_screen.dart';
+import 'package:beep_car_wash/view/find_machine_screens/find_machine.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const SignInOtpScreen(),
+      home: const FindMachine(),
     );
   }
 }
