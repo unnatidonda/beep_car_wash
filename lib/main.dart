@@ -1,4 +1,4 @@
-import 'package:beep_car_wash/view/find_machine_screens/find_machine.dart';
+import 'package:beep_car_wash/view/find_machine_screens/timer_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,8 +17,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
+        fontFamily: "Poppins",
       ),
-      home: const FindMachine(),
+      home: const TimerScreen(),
     );
   }
 }
