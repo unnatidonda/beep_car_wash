@@ -21,14 +21,15 @@ class _TimerScreenState extends State<TimerScreen> {
     return SafeArea(
       child: Scaffold(
         body: Container(
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: <Color>[
-                Color(0xFFEAEAEA),
-                Color(0xFF00AB6C),
-              ],
-            ),
-          ),
+          // decoration: BoxDecoration(
+          //   gradient: LinearGradient(
+          //     colors: <Color>[
+          //       // Color(0xFFEAEAEA),
+          //       Color(0xFFFFFFFF),
+          //       Color(0xFF17B97A),
+          //     ],
+          //   ),
+          // ),
           child: Column(
             children: [
               const Row(
