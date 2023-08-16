@@ -14,6 +14,11 @@ class AppStrings {
   static const String giveFeedback = "Give Feedback";
   static const String howDidWeDo = "How did we do?";
   static const String goodLocation = "Good Location";
+  static const String easyToUse = "Easy to Use";
+  static const String clean = "Clean";
+  static const String friendly = "Friendly Staff";
+  static const String bestPrice = "Best Price";
+  static const String comment = "Comment";
   static const String consectetur = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ...";
   static const String minutes = "For 1\$ tap to reserve machine for 5 \nminutes";
   static const String verification = "We have sent a verification code on your phone number \n+012345443243 Please enter the four number of \nverification code below";

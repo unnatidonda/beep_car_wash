@@ -18,10 +18,11 @@ class _FeedbackScreenState extends State<FeedbackScreen> {
     double screenHeight = size.height;
     double screenWidth = size.width;
     EdgeInsets devicePadding = MediaQuery.of(context).viewPadding;
-    return SafeArea(
-      child: Scaffold(
-        body: Padding(
-          padding: const EdgeInsets.all(20),
+    return Scaffold(
+      body: Padding(
+        padding: devicePadding,
+        child: Padding(
+          padding: const EdgeInsets.all(10),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -43,7 +44,7 @@ class _FeedbackScreenState extends State<FeedbackScreen> {
                   ),
                 ],
               ),
-              const SizedBox(height: 20),
+              SizedBox(height: screenHeight / 50),
               const Text(
                 textAlign: TextAlign.start,
                 AppStrings.giveFeedback,
@@ -53,12 +54,12 @@ class _FeedbackScreenState extends State<FeedbackScreen> {
                   color: AppColors.lightBlackColor,
                 ),
               ),
-              const SizedBox(height: 20),
+              SizedBox(height: screenHeight / 50),
               const Text(
                 textAlign: TextAlign.start,
                 AppStrings.howDidWeDo,
                 style: TextStyle(
-                  fontSize: 22,
+                  fontSize: 17,
                   fontWeight: FontWeight.w800,
                   color: AppColors.lightBlackColor,
                 ),
@@ -120,42 +121,48 @@ class _FeedbackScreenState extends State<FeedbackScreen> {
                       ),
                     ),
                   ),
-                  const SizedBox(width: 10),
+                  SizedBox(width: screenWidth / 30),
                   Container(
                     height: 40,
-                    width: 104,
+                    width: 87,
                     decoration: BoxDecoration(
-                      color: AppColors.lightGreen,
-                      borderRadius: BorderRadius.circular(5),
-                    ),
+                        color: AppColors.whiteColor,
+                        borderRadius: BorderRadius.circular(5),
+                        border: Border.all(
+                          color: AppColors.lightGrey,
+                          width: 2,
+                        )),
                     child: const Padding(
                       padding: EdgeInsets.only(top: 7),
                       child: Text(
                         textAlign: TextAlign.center,
-                        AppStrings.goodLocation,
+                        AppStrings.easyToUse,
                         style: TextStyle(
-                          color: AppColors.darkGreenColor,
+                          color: AppColors.greyColor,
                           fontSize: 13,
                           fontWeight: FontWeight.w700,
                         ),
                       ),
                     ),
                   ),
-                  const SizedBox(width: 10),
+                  SizedBox(width: screenWidth / 30),
                   Container(
                     height: 40,
-                    width: 104,
+                    width: 51,
                     decoration: BoxDecoration(
-                      color: AppColors.lightGreen,
-                      borderRadius: BorderRadius.circular(5),
-                    ),
+                        color: AppColors.whiteColor,
+                        borderRadius: BorderRadius.circular(5),
+                        border: Border.all(
+                          color: AppColors.lightGrey,
+                          width: 2,
+                        )),
                     child: const Padding(
                       padding: EdgeInsets.only(top: 7),
                       child: Text(
                         textAlign: TextAlign.center,
-                        AppStrings.goodLocation,
+                        AppStrings.clean,
                         style: TextStyle(
-                          color: AppColors.darkGreenColor,
+                          color: AppColors.greyColor,
                           fontSize: 13,
                           fontWeight: FontWeight.w700,
                         ),
@@ -163,7 +170,68 @@ class _FeedbackScreenState extends State<FeedbackScreen> {
                     ),
                   ),
                 ],
-              )
+              ),
+              SizedBox(height: screenHeight / 50),
+              Row(
+                children: [
+                  Container(
+                    height: 40,
+                    width: 98,
+                    decoration: BoxDecoration(
+                        color: AppColors.whiteColor,
+                        borderRadius: BorderRadius.circular(5),
+                        border: Border.all(
+                          color: AppColors.lightGrey,
+                          width: 2,
+                        )),
+                    child: const Padding(
+                      padding: EdgeInsets.only(top: 7),
+                      child: Text(
+                        textAlign: TextAlign.center,
+                        AppStrings.friendly,
+                        style: TextStyle(
+                          color: AppColors.greyColor,
+                          fontSize: 13,
+                          fontWeight: FontWeight.w700,
+                        ),
+                      ),
+                    ),
+                  ),
+                  SizedBox(width: screenWidth / 30),
+                  Container(
+                    height: 40,
+                    width: 77,
+                    decoration: BoxDecoration(
+                        color: AppColors.whiteColor,
+                        borderRadius: BorderRadius.circular(5),
+                        border: Border.all(
+                          color: AppColors.lightGrey,
+                          width: 2,
+                        )),
+                    child: const Padding(
+                      padding: EdgeInsets.only(top: 7),
+                      child: Text(
+                        textAlign: TextAlign.center,
+                        AppStrings.bestPrice,
+                        style: TextStyle(
+                          color: AppColors.greyColor,
+                          fontSize: 13,
+                          fontWeight: FontWeight.w700,
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(height: screenHeight / 40),
+              const Text(
+                AppStrings.comment,
+                style: TextStyle(
+                  color: AppColors.lightBlackColor,
+                  fontSize: 17,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
             ],
           ),
         ),
