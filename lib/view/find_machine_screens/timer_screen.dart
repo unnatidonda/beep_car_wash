@@ -110,6 +110,42 @@ class _TimerScreenState extends State<TimerScreen> {
                   fontWeight: FontWeight.w500,
                 ),
               ),
+              const SizedBox(height: 150),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: ElevatedButton(
+                  style: ButtonStyle(
+                    backgroundColor: const MaterialStatePropertyAll(AppColors.darkGreenColor),
+                    shape: MaterialStatePropertyAll(RoundedRectangleBorder(borderRadius: BorderRadius.circular(5))),
+                    // fixedSize: MaterialStatePropertyAll(
+                    // Size(width: 10, height!),
+                    // ),
+                  ),
+                  // onPressed: onPress ?? () {},
+                  onPressed: () {
+                    //   Navigator.push(
+                    //     context,
+                    //     MaterialPageRoute(
+                    //       // builder: (context) => const SigInScreen(),
+                    //     ),
+                    //   );
+                  },
+                  child: const Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        AppStrings.stop,
+                        style: TextStyle(
+                          fontSize: 17,
+                          color: Colors.white,
+                          fontWeight: FontWeight.w500,
+                          fontFamily: "Poppins",
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
             ],
           ),
         ),
