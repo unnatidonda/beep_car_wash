@@ -232,11 +232,12 @@ class _FeedbackScreenState extends State<FeedbackScreen> {
                   fontWeight: FontWeight.w600,
                 ),
               ),
-              TextField(
+              SizedBox(height: screenHeight / 40),
+              const TextField(
                 decoration: InputDecoration(
                   contentPadding: EdgeInsets.all(20),
                   isDense: true,
-                  hintText: "Last Name",
+                  hintText: "Write a comment",
                   // hintStyle: TextStyle(
                   //   color: AppColors.greyColor,
                   //   fontWeight: FontWeight.w500,
@@ -251,6 +252,38 @@ class _FeedbackScreenState extends State<FeedbackScreen> {
                   suffixIcon: Padding(
                     padding: EdgeInsets.all(14),
                   ),
+                ),
+              ),
+              SizedBox(height: screenHeight / 3.2),
+              ElevatedButton(
+                style: ButtonStyle(
+                  backgroundColor: const MaterialStatePropertyAll(AppColors.darkGreenColor),
+                  fixedSize: MaterialStatePropertyAll(
+                    Size(screenWidth / 0.1, screenHeight / 16),
+                  ),
+                  shape: MaterialStatePropertyAll(
+                    RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+                  ),
+                  // fixedSize: MaterialStatePropertyAll(
+                  // Size(width: 10, height!),
+                  // ),
+                ),
+                // onPressed: onPress ?? () {},
+                onPressed: () {},
+                child: const Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      textAlign: TextAlign.center,
+                      AppStrings.publish,
+                      style: TextStyle(
+                        fontSize: 17,
+                        color: AppColors.whiteColor,
+                        fontWeight: FontWeight.w500,
+                        fontFamily: "Poppins",
+                      ),
+                    ),
+                  ],
                 ),
               ),
             ],
