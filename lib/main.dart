@@ -1,4 +1,4 @@
-import 'package:beep_car_wash/view/find_machine_screens/feedback_screen.dart';
+import 'package:beep_car_wash/view/pop_up_report/pop_up_report_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
         fontFamily: "Poppins",
       ),
-      home: const FeedbackScreen(),
+      home: const PopUpReportScreen(),
     );
   }
 }

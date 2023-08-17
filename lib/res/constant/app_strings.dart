@@ -20,6 +20,7 @@ class AppStrings {
   static const String bestPrice = "Best Price";
   static const String comment = "Comment";
   static const String publish = "Publish";
+  static const String report = "Report";
   static const String consectetur = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ...";
   static const String minutes = "For 1\$ tap to reserve machine for 5 \nminutes";
   static const String verification = "We have sent a verification code on your phone number \n+012345443243 Please enter the four number of \nverification code below";
