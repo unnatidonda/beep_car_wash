@@ -232,6 +232,27 @@ class _FeedbackScreenState extends State<FeedbackScreen> {
                   fontWeight: FontWeight.w600,
                 ),
               ),
+              TextField(
+                decoration: InputDecoration(
+                  contentPadding: EdgeInsets.all(20),
+                  isDense: true,
+                  hintText: "Last Name",
+                  // hintStyle: TextStyle(
+                  //   color: AppColors.greyColor,
+                  //   fontWeight: FontWeight.w500,
+                  //   fontSize: 15,
+                  //   fontFamily: "Poppins",
+                  // ),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(15)),
+                  ),
+                  filled: true,
+                  fillColor: Color(0xFFFFFFFF),
+                  suffixIcon: Padding(
+                    padding: EdgeInsets.all(14),
+                  ),
+                ),
+              ),
             ],
           ),
         ),
