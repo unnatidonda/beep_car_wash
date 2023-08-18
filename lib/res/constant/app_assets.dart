@@ -14,5 +14,12 @@ class AppAssets {
   static const String wallet = "assets/images/tabler_wallet.png";
   static const String clock = "assets/images/tabler_clock.png";
   static const String location = "assets/images/location.png";
+  static const String findABeep = "assets/images/Find_a_Beep.png";
+  static const String gift = "assets/images/gift.png";
+  static const String howItWorks = "assets/images/How_it_Works.png";
+  static const String notifications = "assets/images/Notifications.png";
+  static const String payments = "assets/images/Payments.png";
+  static const String settings = "assets/images/settings.png";
+  static const String washHistory = "assets/images/Wash_History.png";
   static const String appPostOnline = "assets/images/undraw_post_online_re_1b82 1.png";
 }

@@ -42,6 +42,13 @@ class AppStrings {
   static const String wallet = "\$4.45";
   static const String applyCoupon = "Apply Coupon";
   static const String helloMartin = "Hello, Martin";
+  static const String findABeep = "Find a Beep";
+  static const String history = "Wash History";
+  static const String payments = "Payments";
+  static const String notifications = "Notifications";
+  static const String works = "How it Works";
+  static const String settings = "Settings";
+  static const String refer = "Refer and Earn \$100";
   static const String whatissueareyoufacing = "What issue are you facing?";
   static const String consectetur = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ...";
   static const String minutes = "For 1\$ tap to reserve machine for 5 \nminutes";

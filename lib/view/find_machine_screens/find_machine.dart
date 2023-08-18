@@ -2,6 +2,7 @@ import 'package:beep_car_wash/res/constant/app_assets.dart';
 import 'package:beep_car_wash/res/constant/app_colors.dart';
 import 'package:flutter/material.dart';
 
+import '../../res/common/drawer_screens.dart';
 import '../../res/constant/app_strings.dart';
 
 class FindMachine extends StatefulWidget {
@@ -22,18 +23,37 @@ class _FindMachineState extends State<FindMachine> {
     EdgeInsets devicePadding = MediaQuery.of(context).viewPadding;
     return Scaffold(
       key: _scaffoldKey,
-      drawer: new Drawer(
-        child: Column(
-          children: [
-            Text(
-              AppStrings.helloMartin,
-              style: TextStyle(
-                fontWeight: FontWeight.w700,
-                color: AppColors.darkGreenColor,
-                fontSize: 28,
+      drawer: Drawer(
+        child: Padding(
+          padding: const EdgeInsets.only(left: 20),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              SizedBox(height: screenHeight / 15),
+              const Text(
+                AppStrings.helloMartin,
+                style: TextStyle(
+                  fontWeight: FontWeight.w700,
+                  color: AppColors.darkGreenColor,
+                  fontSize: 28,
+                ),
               ),
-            ),
-          ],
+              const Column(
+                children: [
+                  DrawerScreen(
+                    name: AppStrings.findABeep,
+                    image: AppAssets.findABeep,
+                    color: AppColors.lightBlackColor,
+                  ),
+                  DrawerScreen(
+                    name: AppStrings.findABeep,
+                    image: AppAssets.findABeep,
+                    color: AppColors.lightBlackColor,
+                  ),
+                ],
+              ),
+            ],
+          ),
         ),
       ),
       body: Stack(
@@ -48,7 +68,7 @@ class _FindMachineState extends State<FindMachine> {
                 padding: const EdgeInsets.only(top: 40),
                 child: IconButton(
                   onPressed: () => _scaffoldKey.currentState!.openDrawer(),
-                  icon: Icon(
+                  icon: const Icon(
                     Icons.menu,
                     size: 35,
                   ),
