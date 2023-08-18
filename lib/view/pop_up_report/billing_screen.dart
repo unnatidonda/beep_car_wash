@@ -125,12 +125,108 @@ class _BillingScreenState extends State<BillingScreen> {
                           fontSize: 34,
                           fontWeight: FontWeight.w800,
                         ),
-                      )
+                      ),
                     ],
                   ),
                 ),
               ],
-            )
+            ),
+            SizedBox(height: screenHeight / 30),
+            const Divider(
+              height: 2,
+              color: AppColors.lightGrey,
+              thickness: 2,
+            ),
+            SizedBox(height: screenHeight / 60),
+            Row(
+              children: [
+                SizedBox(width: screenWidth / 50),
+                const Icon(
+                  Icons.location_on_outlined,
+                  color: AppColors.greyColor,
+                  size: 28,
+                ),
+                const Text(
+                  AppStrings.location,
+                  style: TextStyle(
+                    fontWeight: FontWeight.w600,
+                    fontSize: 17,
+                    color: AppColors.lightBlackColor,
+                  ),
+                )
+              ],
+            ),
+            Padding(
+              padding: const EdgeInsets.all(10),
+              child: Image.asset(
+                AppAssets.location,
+                height: screenHeight / 3.5,
+                width: screenWidth / 1,
+              ),
+            ),
+            SizedBox(height: screenHeight / 100),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                // SizedBox(width: screenWidth / 30),
+                Container(
+                  height: 58,
+                  width: 380,
+                  decoration: BoxDecoration(
+                    color: AppColors.whiteColor,
+                    borderRadius: BorderRadius.circular(10),
+                    border: Border.all(
+                      color: AppColors.lightGrey,
+                      width: 2,
+                    ),
+                  ),
+                  child: const Align(
+                    alignment: Alignment.center,
+                    child: Text(
+                      textAlign: TextAlign.center,
+                      AppStrings.applyCoupon,
+                      style: TextStyle(
+                        color: AppColors.darkGreenColor,
+                        fontSize: 17,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 15, right: 15, top: 40),
+              child: ElevatedButton(
+                style: ButtonStyle(
+                  backgroundColor: const MaterialStatePropertyAll(AppColors.darkGreenColor),
+                  fixedSize: MaterialStatePropertyAll(
+                    Size(screenWidth / 0.1, screenHeight / 16),
+                  ),
+                  shape: MaterialStatePropertyAll(
+                    RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+                  ),
+                ),
+                // onPressed: onPress ?? () {},
+                onPressed: () {},
+                child: const Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      textAlign: TextAlign.center,
+                      AppStrings.continuebeep,
+                      style: TextStyle(
+                        fontSize: 17,
+                        color: AppColors.whiteColor,
+                        fontWeight: FontWeight.w500,
+                        fontFamily: "Poppins",
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
           ],
         ),
       ),

@@ -1,5 +1,8 @@
 import 'package:beep_car_wash/res/constant/app_assets.dart';
+import 'package:beep_car_wash/res/constant/app_colors.dart';
 import 'package:flutter/material.dart';
+
+import '../../res/constant/app_strings.dart';
 
 class FindMachine extends StatefulWidget {
   const FindMachine({super.key});
@@ -9,28 +12,7 @@ class FindMachine extends StatefulWidget {
 }
 
 class _FindMachineState extends State<FindMachine> {
-  int _selectedIndex = 0;
-  static const TextStyle optionStyle = TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
-  static const List<Widget> _widgetOptions = <Widget>[
-    Text(
-      'Index 0: Home',
-      style: optionStyle,
-    ),
-    Text(
-      'Index 1: Business',
-      style: optionStyle,
-    ),
-    Text(
-      'Index 2: School',
-      style: optionStyle,
-    ),
-  ];
-
-  void _onItemTapped(int index) {
-    setState(() {
-      _selectedIndex = index;
-    });
-  }
+  final GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();
 
   @override
   Widget build(BuildContext context) {
@@ -39,56 +21,37 @@ class _FindMachineState extends State<FindMachine> {
     double screenWidth = size.width;
     EdgeInsets devicePadding = MediaQuery.of(context).viewPadding;
     return Scaffold(
-      body: Column(
-        children: [
-          Stack(
-            children: [
-              Image.asset(
-                AppAssets.appMap,
-                width: screenHeight,
+      key: _scaffoldKey,
+      drawer: new Drawer(
+        child: Column(
+          children: [
+            Text(
+              AppStrings.helloMartin,
+              style: TextStyle(
+                fontWeight: FontWeight.w700,
+                color: AppColors.darkGreenColor,
+                fontSize: 28,
               ),
-              _widgetOptions[_selectedIndex],
-              Drawer(
-                child: ListView(
-                  padding: EdgeInsets.zero,
-                  children: [
-                    const DrawerHeader(
-                      decoration: BoxDecoration(
-                        color: Colors.blue,
-                      ),
-                      child: Text('Drawer Header'),
-                    ),
-                    ListTile(
-                      title: const Text('Home'),
-                      selected: _selectedIndex == 0,
-                      onTap: () {
-                        // Update the state of the app
-                        _onItemTapped(0);
-                        // Then close the drawer
-                        Navigator.pop(context);
-                      },
-                    ),
-                    ListTile(
-                      title: const Text('Business'),
-                      selected: _selectedIndex == 1,
-                      onTap: () {
-                        // Update the state of the app
-                        _onItemTapped(1);
-                        // Then close the drawer
-                        Navigator.pop(context);
-                      },
-                    ),
-                    ListTile(
-                      title: const Text('School'),
-                      selected: _selectedIndex == 2,
-                      onTap: () {
-                        // Update the state of the app
-                        _onItemTapped(2);
-                        // Then close the drawer
-                        Navigator.pop(context);
-                      },
-                    ),
-                  ],
+            ),
+          ],
+        ),
+      ),
+      body: Stack(
+        children: [
+          Image.asset(
+            AppAssets.appMap,
+            width: screenHeight,
+          ),
+          Column(
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(top: 40),
+                child: IconButton(
+                  onPressed: () => _scaffoldKey.currentState!.openDrawer(),
+                  icon: Icon(
+                    Icons.menu,
+                    size: 35,
+                  ),
                 ),
               ),
             ],
@@ -96,5 +59,20 @@ class _FindMachineState extends State<FindMachine> {
         ],
       ),
     );
+
+    // Scaffold(
+    //   body: Column(
+    //     children: [
+    //       Stack(
+    //         children: [
+    //           Image.asset(
+    //             AppAssets.appMap,
+    //             width: screenHeight,
+    //           ),
+    //         ],
+    //       )
+    //     ],
+    //   ),
+    // );
   }
 }

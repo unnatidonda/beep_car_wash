@@ -13,5 +13,6 @@ class AppAssets {
   static const String photo = "assets/images/photo.png";
   static const String wallet = "assets/images/tabler_wallet.png";
   static const String clock = "assets/images/tabler_clock.png";
+  static const String location = "assets/images/location.png";
   static const String appPostOnline = "assets/images/undraw_post_online_re_1b82 1.png";
 }

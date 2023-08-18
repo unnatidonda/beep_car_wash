@@ -38,7 +38,10 @@ class AppStrings {
   static const String washCompleted = "Wash Completed!";
   static const String time = "13 September, 2022 - 08:00 AM";
   static const String clock = "01:35";
+  static const String location = "1234 Barclay St, New York";
   static const String wallet = "\$4.45";
+  static const String applyCoupon = "Apply Coupon";
+  static const String helloMartin = "Hello, Martin";
   static const String whatissueareyoufacing = "What issue are you facing?";
   static const String consectetur = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ...";
   static const String minutes = "For 1\$ tap to reserve machine for 5 \nminutes";
