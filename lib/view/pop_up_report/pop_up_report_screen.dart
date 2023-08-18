@@ -219,7 +219,7 @@ class _PopUpReportScreenState extends State<PopUpReportScreen> {
                         width: screenWidth / 10,
                       ),
                       SizedBox(width: screenWidth / 1.7),
-                      Text(
+                      const Text(
                         AppStrings.upload,
                         style: TextStyle(
                           color: AppColors.darkGreenColor,
@@ -230,8 +230,109 @@ class _PopUpReportScreenState extends State<PopUpReportScreen> {
                     ],
                   ),
                 ),
-                Text(
-                  AppStrings.writecomment,
+              ],
+            ),
+            SizedBox(height: screenHeight / 60),
+            const Padding(
+              padding: EdgeInsets.only(left: 10),
+              child: Text(
+                AppStrings.writecomment,
+                style: TextStyle(
+                  fontSize: 17,
+                  fontWeight: FontWeight.w600,
+                  color: AppColors.lightBlackColor,
+                ),
+              ),
+            ),
+            // SizedBox(height: screenHeight / 40),
+            const Padding(
+              padding: EdgeInsets.all(20),
+              child: TextField(
+                decoration: InputDecoration(
+                  contentPadding: EdgeInsets.all(30),
+                  isDense: true,
+                  hintText: "Input Text",
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(15)),
+                  ),
+                  filled: true,
+                  fillColor: Color(0xFFFFFFFF),
+                  suffixIcon: Padding(
+                    padding: EdgeInsets.all(14),
+                  ),
+                ),
+              ),
+            ),
+            SizedBox(height: screenHeight / 5.7),
+            Row(
+              children: [
+                SizedBox(width: screenWidth / 30),
+                // OutlinedButton(
+                //
+                //   onPressed: () {},
+                //   child: const Text(
+                //     AppStrings.cancel,
+                //     style: TextStyle(
+                //       color: AppColors.darkGreenColor,
+                //       fontWeight: FontWeight.w600,
+                //       fontSize: 17,
+                //     ),
+                //   ),
+                // ),
+                Container(
+                  height: 56,
+                  width: 180,
+                  decoration: BoxDecoration(
+                    color: AppColors.whiteColor,
+                    border: Border.all(
+                      color: AppColors.lightGrey,
+                      width: 2,
+                    ),
+                  ),
+                  child: const Padding(
+                    padding: EdgeInsets.only(top: 10),
+                    child: Text(
+                      textAlign: TextAlign.center,
+                      AppStrings.cancel,
+                      style: TextStyle(
+                        color: AppColors.darkGreenColor,
+                        fontWeight: FontWeight.w600,
+                        fontSize: 17,
+                      ),
+                    ),
+                  ),
+                ),
+                SizedBox(width: screenWidth / 40),
+                ElevatedButton(
+                  style: ButtonStyle(
+                    backgroundColor: const MaterialStatePropertyAll(AppColors.darkGreenColor),
+                    fixedSize: MaterialStatePropertyAll(
+                      Size(screenWidth / 2, screenHeight / 16),
+                    ),
+                    shape: MaterialStatePropertyAll(
+                      RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+                    ),
+                    // fixedSize: MaterialStatePropertyAll(
+                    // Size(width: 10, height!),
+                    // ),
+                  ),
+                  // onPressed: onPress ?? () {},
+                  onPressed: () {},
+                  child: const Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        textAlign: TextAlign.center,
+                        AppStrings.submit,
+                        style: TextStyle(
+                          fontSize: 17,
+                          color: AppColors.whiteColor,
+                          fontWeight: FontWeight.w500,
+                          fontFamily: "Poppins",
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ],
             ),

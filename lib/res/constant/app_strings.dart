@@ -27,8 +27,13 @@ class AppStrings {
   static const String otherissue = "Other Issue";
   static const String attachphoto = "Attach Photo";
   static const String upload = "Upload";
+  static const String cancel = "Cancel";
+  static const String submit = "Submit";
+  static const String machinecode = "Enter Machine Code";
   static const String writecomment = "Write a Comment";
+  static const String beepCodeToStart = "Enter Beep code to start";
   static const String waterpump = "Water/Foam pump";
+  static const String verifyNumber = "Verify Number";
   static const String whatissueareyoufacing = "What issue are you facing?";
   static const String consectetur = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ...";
   static const String minutes = "For 1\$ tap to reserve machine for 5 \nminutes";
