@@ -38,19 +38,40 @@ class _FindMachineState extends State<FindMachine> {
                   fontSize: 28,
                 ),
               ),
-              const Column(
-                children: [
-                  DrawerScreen(
-                    name: AppStrings.findABeep,
-                    image: AppAssets.findABeep,
-                    color: AppColors.lightBlackColor,
-                  ),
-                  DrawerScreen(
-                    name: AppStrings.findABeep,
-                    image: AppAssets.findABeep,
-                    color: AppColors.lightBlackColor,
-                  ),
-                ],
+              const DrawerScreen(
+                name: AppStrings.findABeep,
+                image: AppAssets.findABeep,
+                color: AppColors.lightBlackColor,
+              ),
+              const DrawerScreen(
+                name: AppStrings.washHistory,
+                image: AppAssets.washHistory,
+                color: AppColors.greyColor,
+              ),
+              const DrawerScreen(
+                name: AppStrings.payments,
+                image: AppAssets.payments,
+                color: AppColors.greyColor,
+              ),
+              const DrawerScreen(
+                name: AppStrings.notifications,
+                image: AppAssets.notifications,
+                color: AppColors.lightBlackColor,
+              ),
+              const DrawerScreen(
+                name: AppStrings.works,
+                image: AppAssets.howItWorks,
+                color: AppColors.lightBlackColor,
+              ),
+              const DrawerScreen(
+                name: AppStrings.settings,
+                image: AppAssets.settings,
+                color: AppColors.lightBlackColor,
+              ),
+              const DrawerScreen(
+                name: AppStrings.refer,
+                image: AppAssets.gift,
+                color: AppColors.darkGreenColor,
               ),
             ],
           ),
@@ -75,24 +96,9 @@ class _FindMachineState extends State<FindMachine> {
                 ),
               ),
             ],
-          )
+          ),
         ],
       ),
     );
-
-    // Scaffold(
-    //   body: Column(
-    //     children: [
-    //       Stack(
-    //         children: [
-    //           Image.asset(
-    //             AppAssets.appMap,
-    //             width: screenHeight,
-    //           ),
-    //         ],
-    //       )
-    //     ],
-    //   ),
-    // );
   }
 }

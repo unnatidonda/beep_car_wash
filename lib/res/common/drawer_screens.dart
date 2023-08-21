@@ -6,7 +6,8 @@ class DrawerScreen extends StatelessWidget {
   final String? name;
   final String? image;
   final Color? color;
-  const DrawerScreen({super.key, this.name, this.image, this.color});
+  final void Function()? onPress;
+  const DrawerScreen({super.key, this.name, this.image, this.color, this.onPress});
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +23,7 @@ class DrawerScreen extends StatelessWidget {
         ),
         SizedBox(width: screenWidth / 40),
         TextButton(
-          onPressed: () {},
+          onPressed: onPress ?? () {},
           child: Text(
             name ?? "",
             style: const TextStyle(

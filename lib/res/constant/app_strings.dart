@@ -48,6 +48,7 @@ class AppStrings {
   static const String notifications = "Notifications";
   static const String works = "How it Works";
   static const String settings = "Settings";
+  static const String washHistory = "Wash History";
   static const String refer = "Refer and Earn \$100";
   static const String whatissueareyoufacing = "What issue are you facing?";
   static const String consectetur = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ...";
