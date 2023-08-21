@@ -97,6 +97,24 @@ class _FindMachineState extends State<FindMachine> {
               ),
             ],
           ),
+          Row(
+            // crossAxisAlignment: CrossAxisAlignment.center,
+            // mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              SizedBox(width: screenWidth / 2.7),
+              Image.asset(
+                AppAssets.appBeepText,
+                width: 115,
+                height: 140,
+              ),
+              SizedBox(width: screenWidth / 4.7),
+              Image.asset(
+                AppAssets.beepLocation,
+                width: 50,
+                height: 150,
+              ),
+            ],
+          ),
         ],
       ),
     );
