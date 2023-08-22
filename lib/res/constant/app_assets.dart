@@ -23,6 +23,9 @@ class AppAssets {
   static const String washHistory = "assets/images/Wash_History.png";
   static const String beepLocation = "assets/images/beep_location.png";
   static const String mapPin = "assets/images/map_pin.png";
+  static const String card = "assets/images/card.png";
+  static const String paymentImage = "assets/images/payment_image.png";
+  static const String pencilMinus = "assets/images/pencil_minus.png";
   static const String washHistoryImage = "assets/images/wash_history_image.png";
   static const String appPostOnline = "assets/images/undraw_post_online_re_1b82 1.png";
 }

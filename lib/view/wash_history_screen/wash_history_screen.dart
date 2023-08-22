@@ -78,10 +78,18 @@ class _WashHistoryScreenState extends State<WashHistoryScreen> {
                 image: AppAssets.findABeep,
                 color: AppColors.lightBlackColor,
               ),
-              const DrawerScreen(
+              DrawerScreen(
                 name: AppStrings.washHistory,
                 image: AppAssets.washHistory,
                 color: AppColors.greyColor,
+                onPress: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const WashHistoryScreen(),
+                    ),
+                  );
+                },
               ),
               const DrawerScreen(
                 name: AppStrings.payments,

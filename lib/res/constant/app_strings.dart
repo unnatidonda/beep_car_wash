@@ -54,6 +54,8 @@ class AppStrings {
   static const String minTime = "4:54 Min";
   static const String price = "\$5.43";
   static const String newYork = "1234 Barclay St, New York";
+  static const String us = "US \$ 0.00";
+  static const String currentBalance = "Current Balance";
   static const String whatissueareyoufacing = "What issue are you facing?";
   static const String consectetur = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ...";
   static const String minutes = "For 1\$ tap to reserve machine for 5 \nminutes";
