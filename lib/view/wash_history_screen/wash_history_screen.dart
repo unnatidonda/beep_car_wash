@@ -14,6 +14,42 @@ class WashHistoryScreen extends StatefulWidget {
 
 class _WashHistoryScreenState extends State<WashHistoryScreen> {
   final GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();
+  Map mapdata = {
+    "text": "",
+  };
+
+  List<Map<String, dynamic>> colortextList = [
+    {
+      "text": "",
+      "image": AppAssets.washHistoryImage,
+    },
+    {
+      "text": "",
+      "image": AppAssets.washHistoryImage,
+    },
+    {
+      "text": "white color",
+      "image": AppAssets.washHistoryImage,
+    },
+    {
+      "text": "white color",
+      "image": AppAssets.washHistoryImage,
+    },
+    {
+      "color": Colors.white,
+      "text": "",
+      "image": AppAssets.washHistoryImage,
+    },
+    {
+      "text": "",
+      "image": AppAssets.washHistoryImage,
+    },
+    {
+      "text": "",
+      "image": AppAssets.washHistoryImage,
+    },
+  ];
+
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -103,8 +139,111 @@ class _WashHistoryScreenState extends State<WashHistoryScreen> {
                   ],
                 ),
               ),
+              Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.only(left: 10, right: 10),
+                  child: ListView.builder(
+                    itemCount: 5,
+                    itemBuilder: (context, index) => Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Row(
+                            children: [
+                              Container(
+                                height: 20,
+                                width: 20,
+                                decoration: BoxDecoration(
+                                  color: AppColors.darkGreenColor,
+                                  borderRadius: BorderRadius.circular(100),
+                                ),
+                              ),
+                              SizedBox(width: screenWidth / 20),
+                              const Text(
+                                AppStrings.washTime,
+                                style: TextStyle(
+                                  color: AppColors.greyColor,
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.w500,
+                                ),
+                              ),
+                            ],
+                          ),
+                          SizedBox(height: screenHeight / 50),
+                          Container(
+                            width: 351,
+                            height: 94,
+                            decoration: BoxDecoration(
+                              border: Border.all(
+                                color: AppColors.lightGrey,
+                                width: 2,
+                              ),
+                              borderRadius: BorderRadius.circular(10),
+                            ),
+                            child: Padding(
+                              padding: const EdgeInsets.only(top: 10),
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Row(
+                                    children: [
+                                      Image.asset(
+                                        colortextList[index]["image"],
+                                        width: screenWidth / 5.6,
+                                        height: screenHeight / 18,
+                                      ),
+                                      const Text(
+                                        AppStrings.minTime,
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.w700,
+                                          fontSize: 17,
+                                          color: AppColors.lightBlackColor,
+                                        ),
+                                      ),
+                                      SizedBox(width: screenWidth / 3.5),
+                                      const Text(
+                                        AppStrings.price,
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.w700,
+                                          fontSize: 17,
+                                          color: AppColors.darkGreenColor,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                  Row(
+                                    children: [
+                                      SizedBox(width: screenWidth / 5.5),
+                                      Image.asset(
+                                        AppAssets.mapPin,
+                                        width: screenWidth / 20,
+                                        height: 30,
+                                      ),
+                                      SizedBox(width: screenWidth / 50),
+                                      const Text(
+                                        AppStrings.newYork,
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.w700,
+                                          fontSize: 14,
+                                          color: AppColors.greyColor,
+                                        ),
+                                      ),
+                                    ],
+                                  )
+                                ],
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ),
             ],
-          )
+          ),
         ],
       ),
     );

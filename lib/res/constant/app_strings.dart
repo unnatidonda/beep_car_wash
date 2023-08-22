@@ -49,7 +49,11 @@ class AppStrings {
   static const String works = "How it Works";
   static const String settings = "Settings";
   static const String washHistory = "Wash History";
+  static const String washTime = "13 September, 2022 - 08:00 AM";
   static const String refer = "Refer and Earn \$100";
+  static const String minTime = "4:54 Min";
+  static const String price = "\$5.43";
+  static const String newYork = "1234 Barclay St, New York";
   static const String whatissueareyoufacing = "What issue are you facing?";
   static const String consectetur = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ...";
   static const String minutes = "For 1\$ tap to reserve machine for 5 \nminutes";
