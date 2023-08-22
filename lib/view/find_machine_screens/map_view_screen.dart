@@ -27,7 +27,7 @@ class _MapViewScreenState extends State<MapViewScreen> {
   );
 
   final List<Marker> _marker = <Marker>[
-    Marker(
+    const Marker(
       markerId: MarkerId("1"),
       position: LatLng(33.6844, 73.0479),
       infoWindow: InfoWindow(
