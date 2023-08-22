@@ -48,7 +48,9 @@ class _MapViewScreenState extends State<MapViewScreen> {
         },
       ),
       floatingActionButton: FloatingActionButton.extended(
-        onPressed: _goToTheLake,
+        onPressed: () {
+          // getUserCurrentLocation();
+        },
         label: const Text('To the lake!'),
         icon: const Icon(Icons.directions_boat),
       ),
