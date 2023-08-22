@@ -4,7 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 class MapViewScreen extends StatefulWidget {
-  const MapViewScreen({super.key});
+  final Set<Marker> _markers = {};
+  MapViewScreen({super.key});
 
   @override
   State<MapViewScreen> createState() => _MapViewScreenState();
@@ -24,12 +25,24 @@ class _MapViewScreenState extends State<MapViewScreen> {
     tilt: 59.440717697143555,
     zoom: 19.151926040649414,
   );
+
+  final List<Marker> _marker = <Marker>[
+    Marker(
+      markerId: MarkerId("1"),
+      position: LatLng(33.6844, 73.0479),
+      infoWindow: InfoWindow(
+        title: "the title of the marker",
+      ),
+    ),
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: GoogleMap(
         mapType: MapType.normal,
         initialCameraPosition: _kGooglePlex,
+        markers: Set<Marker>.of(_marker),
         onMapCreated: (GoogleMapController controller) {
           _controller.complete(controller);
         },
