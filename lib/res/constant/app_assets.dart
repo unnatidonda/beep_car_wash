@@ -16,10 +16,12 @@ class AppAssets {
   static const String location = "assets/images/location.png";
   static const String findABeep = "assets/images/Find_a_Beep.png";
   static const String gift = "assets/images/gift.png";
+  static const String logosVisa = "assets/images/logos_visa.png";
   static const String howItWorks = "assets/images/How_it_Works.png";
   static const String notifications = "assets/images/Notifications.png";
   static const String payments = "assets/images/Payments.png";
   static const String settings = "assets/images/settings.png";
+  static const String masterCard = "assets/images/uim_master_card.png";
   static const String washHistory = "assets/images/Wash_History.png";
   static const String beepLocation = "assets/images/beep_location.png";
   static const String mapPin = "assets/images/map_pin.png";

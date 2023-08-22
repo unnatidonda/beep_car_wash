@@ -56,10 +56,18 @@ class _PaymentScreenState extends State<PaymentScreen> {
                   );
                 },
               ),
-              const DrawerScreen(
+              DrawerScreen(
                 name: AppStrings.payments,
                 image: AppAssets.payments,
                 color: AppColors.greyColor,
+                onPress: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const PaymentScreen(),
+                    ),
+                  );
+                },
               ),
               const DrawerScreen(
                 name: AppStrings.notifications,
@@ -154,10 +162,116 @@ class _PaymentScreenState extends State<PaymentScreen> {
           ),
           Row(
             children: [
+              SizedBox(width: screenWidth / 40),
               Image.asset(
-                AppAssets.
-              )
+                AppAssets.masterCard,
+                height: screenHeight / 8,
+                width: screenWidth / 4,
+              ),
+              const Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    AppStrings.mastercard,
+                    style: TextStyle(
+                      fontWeight: FontWeight.w800,
+                      fontSize: 17,
+                      color: AppColors.lightBlackColor,
+                    ),
+                  ),
+                  Text(
+                    AppStrings.code,
+                    style: TextStyle(
+                      fontWeight: FontWeight.w800,
+                      fontSize: 15,
+                      color: AppColors.greyColor,
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(width: screenWidth / 5),
+              Container(
+                height: 30,
+                width: 65,
+                decoration: BoxDecoration(
+                  color: AppColors.lightBlue,
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: const Align(
+                  alignment: Alignment.center,
+                  child: Text(
+                    textAlign: TextAlign.center,
+                    AppStrings.primary,
+                    style: TextStyle(
+                      color: AppColors.darkBule,
+                      fontSize: 14,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                ),
+              ),
             ],
+          ),
+          Row(
+            children: [
+              SizedBox(width: screenWidth / 40),
+              Image.asset(
+                "assets/images/logos_visa.png",
+                height: screenHeight / 10,
+                width: screenWidth / 4,
+              ),
+              SizedBox(width: screenWidth / 40),
+              const Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    AppStrings.visa,
+                    style: TextStyle(
+                      fontWeight: FontWeight.w800,
+                      fontSize: 17,
+                      color: AppColors.lightBlackColor,
+                    ),
+                  ),
+                  Text(
+                    AppStrings.visaCode,
+                    style: TextStyle(
+                      fontWeight: FontWeight.w800,
+                      fontSize: 15,
+                      color: AppColors.greyColor,
+                    ),
+                  ),
+                ],
+              ),
+            ],
+          ),
+          SizedBox(height: screenHeight / 7),
+          ElevatedButton(
+            style: ButtonStyle(
+              backgroundColor: const MaterialStatePropertyAll(AppColors.darkGreenColor),
+              fixedSize: MaterialStatePropertyAll(
+                Size(screenWidth / 1.1, screenHeight / 16),
+              ),
+              shape: MaterialStatePropertyAll(
+                RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+              ),
+            ),
+            // onPressed: onPress ?? () {},
+            onPressed: () {},
+            child: const Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  textAlign: TextAlign.center,
+                  AppStrings.addNewPayment,
+                  style: TextStyle(
+                    fontSize: 17,
+                    color: AppColors.whiteColor,
+                    fontWeight: FontWeight.w500,
+                    fontFamily: "Poppins",
+                  ),
+                ),
+              ],
+            ),
           ),
         ],
       ),

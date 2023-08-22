@@ -4,6 +4,7 @@ import '../../res/common/drawer_screens.dart';
 import '../../res/constant/app_assets.dart';
 import '../../res/constant/app_colors.dart';
 import '../../res/constant/app_strings.dart';
+import '../payment_screens/payment_screen.dart';
 
 class WashHistoryScreen extends StatefulWidget {
   const WashHistoryScreen({super.key});
@@ -91,9 +92,17 @@ class _WashHistoryScreenState extends State<WashHistoryScreen> {
                   );
                 },
               ),
-              const DrawerScreen(
+              DrawerScreen(
                 name: AppStrings.payments,
                 image: AppAssets.payments,
+                onPress: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const PaymentScreen(),
+                    ),
+                  );
+                },
                 color: AppColors.greyColor,
               ),
               const DrawerScreen(

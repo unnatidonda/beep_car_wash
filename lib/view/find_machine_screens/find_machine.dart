@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 
 import '../../res/common/drawer_screens.dart';
 import '../../res/constant/app_strings.dart';
+import '../payment_screens/payment_screen.dart';
 import '../wash_history_screen/wash_history_screen.dart';
 
 class FindMachine extends StatefulWidget {
@@ -57,9 +58,17 @@ class _FindMachineState extends State<FindMachine> {
                 },
                 color: AppColors.greyColor,
               ),
-              const DrawerScreen(
+              DrawerScreen(
                 name: AppStrings.payments,
                 image: AppAssets.payments,
+                onPress: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const PaymentScreen(),
+                    ),
+                  );
+                },
                 color: AppColors.greyColor,
               ),
               const DrawerScreen(

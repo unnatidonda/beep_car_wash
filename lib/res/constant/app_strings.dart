@@ -56,6 +56,12 @@ class AppStrings {
   static const String newYork = "1234 Barclay St, New York";
   static const String us = "US \$ 0.00";
   static const String currentBalance = "Current Balance";
+  static const String mastercard = "Mastercard";
+  static const String visa = "Visa";
+  static const String primary = "Primary";
+  static const String addNewPayment = "Add New Payment";
+  static const String code = "**** **** **** 5678";
+  static const String visaCode = "**** **** **** 1243";
   static const String whatissueareyoufacing = "What issue are you facing?";
   static const String consectetur = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ...";
   static const String minutes = "For 1\$ tap to reserve machine for 5 \nminutes";
