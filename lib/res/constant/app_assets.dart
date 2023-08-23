@@ -16,7 +16,10 @@ class AppAssets {
   static const String location = "assets/images/location.png";
   static const String findABeep = "assets/images/Find_a_Beep.png";
   static const String gift = "assets/images/gift.png";
+  static const String appleLogo = "assets/images/apple_logo.png";
+  static const String paypal = "assets/images/paypal.png";
   static const String logosVisa = "assets/images/logos_visa.png";
+  static const String creditCard = "assets/images/credit_card.png";
   static const String howItWorks = "assets/images/How_it_Works.png";
   static const String notifications = "assets/images/Notifications.png";
   static const String payments = "assets/images/Payments.png";

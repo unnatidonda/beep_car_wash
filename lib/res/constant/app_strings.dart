@@ -60,8 +60,12 @@ class AppStrings {
   static const String visa = "Visa";
   static const String chooseAPaymentMethod = "Choose a Payment Method";
   static const String primary = "Primary";
+  static const String cardNumber = "Card Number";
+  static const String creditCard = "Credit Card";
   static const String paymentMethod = "Payment Method";
   static const String addNewPayment = "Add New Payment";
+  static const String applePay = "Apple Pay";
+  static const String payPal = "Pay Pal";
   static const String code = "**** **** **** 5678";
   static const String visaCode = "**** **** **** 1243";
   static const String whatissueareyoufacing = "What issue are you facing?";
