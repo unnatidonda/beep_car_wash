@@ -11,6 +11,35 @@ class AddPaymentMethodScreen extends StatefulWidget {
 }
 
 class _AddPaymentMethodScreenState extends State<AddPaymentMethodScreen> {
+//   Future<void> _showMyDialog() async {
+//     return showDialog<void>(
+//       context: context,
+//       barrierDismissible: false, // user must tap button!
+//       builder: (BuildContext context) {
+//         return AlertDialog(
+//           title: const Text('AlertDialog Title'),
+//           content: const SingleChildScrollView(
+//             child: ListBody(
+//               children: <Widget>[
+//                 Text('This is a demo alert dialog.'),
+//                 Text('Would you like to approve of this message?'),
+//               ],
+//             ),
+//           ),
+//           actions: <Widget>[
+//             TextButton(
+//               child: const Text('Approve'),
+//               onPressed: () {
+//                 Navigator.of(context).pop();
+//               },
+//             ),
+//           ],
+//         );
+//       },
+//     );
+//   }
+  bool switchvalue = true;
+
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -219,6 +248,106 @@ class _AddPaymentMethodScreenState extends State<AddPaymentMethodScreen> {
                 ),
               ],
             ),
+            SizedBox(height: screenHeight / 40),
+            const Padding(
+              padding: EdgeInsets.only(left: 8, right: 8),
+              child: TextField(
+                decoration: InputDecoration(
+                  contentPadding: EdgeInsets.all(21),
+                  isDense: true,
+                  hintText: "DD/MM/YYYY",
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(15)),
+                  ),
+                  filled: true,
+                  fillColor: Color(0xFFFFFFFF),
+                  suffixIcon: Padding(
+                    padding: EdgeInsets.all(14),
+                  ),
+                ),
+              ),
+            ),
+            SizedBox(height: screenHeight / 40),
+            Row(
+              children: [
+                SizedBox(width: screenWidth / 40),
+                const Text(
+                  AppStrings.cVV,
+                  style: TextStyle(
+                    fontWeight: FontWeight.w600,
+                    fontSize: 17,
+                    color: AppColors.lightBlackColor,
+                  ),
+                ),
+              ],
+            ),
+            SizedBox(height: screenHeight / 40),
+            const Padding(
+              padding: EdgeInsets.only(left: 8, right: 8),
+              child: TextField(
+                decoration: InputDecoration(
+                  contentPadding: EdgeInsets.all(21),
+                  isDense: true,
+                  hintText: "Input CVV",
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(15)),
+                  ),
+                  filled: true,
+                  fillColor: Color(0xFFFFFFFF),
+                  suffixIcon: Padding(
+                    padding: EdgeInsets.all(14),
+                  ),
+                ),
+              ),
+            ),
+            SizedBox(height: screenHeight / 40),
+            Row(
+              children: [
+                SizedBox(width: screenWidth / 40),
+                const Text(
+                  AppStrings.primaryPayment,
+                  style: TextStyle(
+                    fontWeight: FontWeight.w600,
+                    fontSize: 17,
+                    color: AppColors.lightBlackColor,
+                  ),
+                ),
+                SizedBox(width: screenWidth / 3),
+                Switch(
+                  activeColor: Colors.white,
+                  inactiveThumbColor: Colors.green,
+                  activeTrackColor: Colors.green,
+                  hoverColor: Colors.green,
+                  onChanged: (value) {
+                    debugPrint("value ----> $value");
+                    setState(() {
+                      switchvalue = value;
+                    });
+                  },
+                  value: switchvalue,
+                ),
+              ],
+            ),
+            // TextButton(
+            //   onPressed: () => showDialog<String>(
+            //     context: context,
+            //     builder: (BuildContext context) => AlertDialog(
+            //       title: const Text('AlertDialog Title'),
+            //       content: const Text('AlertDialog description'),
+            //       actions: <Widget>[
+            //         TextButton(
+            //           onPressed: () => Navigator.pop(context, 'Cancel'),
+            //           child: const Text('Cancel'),
+            //         ),
+            //         TextButton(
+            //           onPressed: () => Navigator.pop(context, 'OK'),
+            //           child: const Text('OK'),
+            //         ),
+            //       ],
+            //     ),
+            //   ),
+            //   child: const Text('Show Dialog'),
+            // ),
           ],
         ),
       ),
