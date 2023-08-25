@@ -58,6 +58,8 @@ class AppStrings {
   static const String currentBalance = "Current Balance";
   static const String mastercard = "Mastercard";
   static const String visa = "Visa";
+  static const String cardHolderName = "Card Holder Name";
+  static const String number = "1234 5678 8902 1243";
   static const String chooseAPaymentMethod = "Choose a Payment Method";
   static const String primary = "Primary";
   static const String cardNumber = "Card Number";

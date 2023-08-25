@@ -168,6 +168,57 @@ class _AddPaymentMethodScreenState extends State<AddPaymentMethodScreen> {
                 ),
               ],
             ),
+            SizedBox(height: screenHeight / 40),
+            Row(
+              children: [
+                SizedBox(width: screenWidth / 25),
+                Container(
+                  height: screenHeight / 15,
+                  width: screenWidth / 1.1,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(15),
+                    color: AppColors.whiteColor,
+                    border: Border.all(
+                      color: AppColors.lightGrey,
+                      width: 2,
+                    ),
+                  ),
+                  child: Row(
+                    children: [
+                      SizedBox(width: screenWidth / 30),
+                      Text(
+                        AppStrings.number,
+                        style: TextStyle(
+                          color: AppColors.lightBlackColor,
+                          fontWeight: FontWeight.w600,
+                          fontSize: 17,
+                        ),
+                      ),
+                      SizedBox(width: screenWidth / 4),
+                      Image.asset(
+                        AppAssets.logosVisa,
+                        width: screenWidth / 8,
+                        height: screenHeight / 10,
+                      )
+                    ],
+                  ),
+                ),
+              ],
+            ),
+            SizedBox(height: screenHeight / 40),
+            Row(
+              children: [
+                SizedBox(width: screenWidth / 40),
+                const Text(
+                  AppStrings.cardHolderName,
+                  style: TextStyle(
+                    fontWeight: FontWeight.w600,
+                    fontSize: 17,
+                    color: AppColors.lightBlackColor,
+                  ),
+                ),
+              ],
+            ),
           ],
         ),
       ),
