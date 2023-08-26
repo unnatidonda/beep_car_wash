@@ -63,6 +63,7 @@ class AppStrings {
   static const String chooseAPaymentMethod = "Choose a Payment Method";
   static const String primary = "Primary";
   static const String cVV = "CVV";
+  static const String addPayment = "Add Payment";
   static const String primaryPayment = "Set as Primary Payment";
   static const String cardNumber = "Card Number";
   static const String creditCard = "Credit Card";

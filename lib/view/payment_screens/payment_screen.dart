@@ -5,6 +5,7 @@ import '../../res/constant/app_assets.dart';
 import '../../res/constant/app_colors.dart';
 import '../../res/constant/app_strings.dart';
 import '../wash_history_screen/wash_history_screen.dart';
+import 'add_payment_method_screen.dart';
 
 class PaymentScreen extends StatefulWidget {
   const PaymentScreen({super.key});
@@ -256,7 +257,14 @@ class _PaymentScreenState extends State<PaymentScreen> {
               ),
             ),
             // onPressed: onPress ?? () {},
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const AddPaymentMethodScreen(),
+                ),
+              );
+            },
             child: const Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
