@@ -18,6 +18,7 @@ class AppAssets {
   static const String gift = "assets/images/gift.png";
   static const String appleLogo = "assets/images/apple_logo.png";
   static const String paypal = "assets/images/paypal.png";
+  static const String superDeal = "assets/images/super_deal.png";
   static const String logosVisa = "assets/images/logos_visa.png";
   static const String creditCard = "assets/images/credit_card.png";
   static const String howItWorks = "assets/images/How_it_Works.png";
@@ -29,6 +30,7 @@ class AppAssets {
   static const String beepLocation = "assets/images/beep_location.png";
   static const String mapPin = "assets/images/map_pin.png";
   static const String card = "assets/images/card.png";
+  static const String bestDeal = "assets/images/best_deal.png";
   static const String paymentImage = "assets/images/payment_image.png";
   static const String pencilMinus = "assets/images/pencil_minus.png";
   static const String washHistoryImage = "assets/images/wash_history_image.png";

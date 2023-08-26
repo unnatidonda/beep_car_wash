@@ -58,11 +58,15 @@ class AppStrings {
   static const String currentBalance = "Current Balance";
   static const String mastercard = "Mastercard";
   static const String visa = "Visa";
+  static const String superDealBestDeal = "Lorem ipsum dolor sit amet, consectetur adipiscing elit,  \n sed do eiusmod tempor incididunt ut labore et dolore";
+  static const String sepDate = "Tue, Sep 13";
   static const String cardHolderName = "Card Holder Name";
   static const String number = "1234 5678 8902 1243";
   static const String chooseAPaymentMethod = "Choose a Payment Method";
   static const String primary = "Primary";
   static const String cVV = "CVV";
+  static const String bestDeal = "Best Deal";
+  static const String superDeal = "Super Deal";
   static const String addPayment = "Add Payment";
   static const String primaryPayment = "Set as Primary Payment";
   static const String cardNumber = "Card Number";

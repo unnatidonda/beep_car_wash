@@ -1,4 +1,4 @@
-import 'package:beep_car_wash/view/payment_screens/payment_screen.dart';
+import 'package:beep_car_wash/view/notifications_screen/notification_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
         fontFamily: "Poppins",
       ),
-      home: const PaymentScreen(),
+      home: const NotificationScreen(),
     );
   }
 }
