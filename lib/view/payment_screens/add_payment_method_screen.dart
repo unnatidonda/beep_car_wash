@@ -11,33 +11,34 @@ class AddPaymentMethodScreen extends StatefulWidget {
 }
 
 class _AddPaymentMethodScreenState extends State<AddPaymentMethodScreen> {
-//   Future<void> _showMyDialog() async {
-//     return showDialog<void>(
-//       context: context,
-//       barrierDismissible: false, // user must tap button!
-//       builder: (BuildContext context) {
-//         return AlertDialog(
-//           title: const Text('AlertDialog Title'),
-//           content: const SingleChildScrollView(
-//             child: ListBody(
-//               children: <Widget>[
-//                 Text('This is a demo alert dialog.'),
-//                 Text('Would you like to approve of this message?'),
-//               ],
-//             ),
-//           ),
-//           actions: <Widget>[
-//             TextButton(
-//               child: const Text('Approve'),
-//               onPressed: () {
-//                 Navigator.of(context).pop();
-//               },
-//             ),
-//           ],
-//         );
-//       },
-//     );
-//   }
+  Future<void> _showMyDialog() async {
+    return showDialog<void>(
+      context: context,
+      barrierDismissible: false, // user must tap button!
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: const Text('AlertDialog Title'),
+          content: const SingleChildScrollView(
+            child: ListBody(
+              children: <Widget>[
+                Text('This is a demo alert dialog.'),
+                Text('Would you like to approve of this message?'),
+              ],
+            ),
+          ),
+          actions: <Widget>[
+            TextButton(
+              child: const Text('Approve'),
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+            ),
+          ],
+        );
+      },
+    );
+  }
+
   bool switchvalue = true;
 
   @override
@@ -215,7 +216,7 @@ class _AddPaymentMethodScreenState extends State<AddPaymentMethodScreen> {
                   child: Row(
                     children: [
                       SizedBox(width: screenWidth / 30),
-                      Text(
+                      const Text(
                         AppStrings.number,
                         style: TextStyle(
                           color: AppColors.lightBlackColor,
@@ -328,26 +329,26 @@ class _AddPaymentMethodScreenState extends State<AddPaymentMethodScreen> {
                 ),
               ],
             ),
-            // TextButton(
-            //   onPressed: () => showDialog<String>(
-            //     context: context,
-            //     builder: (BuildContext context) => AlertDialog(
-            //       title: const Text('AlertDialog Title'),
-            //       content: const Text('AlertDialog description'),
-            //       actions: <Widget>[
-            //         TextButton(
-            //           onPressed: () => Navigator.pop(context, 'Cancel'),
-            //           child: const Text('Cancel'),
-            //         ),
-            //         TextButton(
-            //           onPressed: () => Navigator.pop(context, 'OK'),
-            //           child: const Text('OK'),
-            //         ),
-            //       ],
-            //     ),
-            //   ),
-            //   child: const Text('Show Dialog'),
-            // ),
+            TextButton(
+              onPressed: () => showDialog<String>(
+                context: context,
+                builder: (BuildContext context) => AlertDialog(
+                  title: const Text('AlertDialog Title'),
+                  content: const Text('AlertDialog description'),
+                  actions: <Widget>[
+                    TextButton(
+                      onPressed: () => Navigator.pop(context, 'Cancel'),
+                      child: const Text('Cancel'),
+                    ),
+                    TextButton(
+                      onPressed: () => Navigator.pop(context, 'OK'),
+                      child: const Text('OK'),
+                    ),
+                  ],
+                ),
+              ),
+              child: const Text('Show Dialog'),
+            ),
           ],
         ),
       ),
