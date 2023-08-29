@@ -127,7 +127,7 @@ class _NotificationScreenState extends State<NotificationScreen> {
                 children: [
                   Container(
                     color: AppColors.lightGreen,
-                    height: screenHeight / 4,
+                    height: screenHeight / 3.5,
                     width: screenWidth / 1,
                     child: Column(
                       children: [
@@ -163,6 +163,11 @@ class _NotificationScreenState extends State<NotificationScreen> {
                             fontWeight: FontWeight.w700,
                           ),
                         ),
+                        SizedBox(height: screenHeight / 40),
+                        Image.asset(
+                          AppAssets.superDeal,
+                          height: screenHeight / 7.4,
+                        )
                       ],
                     ),
                   ),
