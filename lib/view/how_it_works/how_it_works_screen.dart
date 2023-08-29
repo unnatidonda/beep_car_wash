@@ -105,7 +105,40 @@ class _HowItWorksScreenState extends State<HowItWorksScreen> {
         ),
       ),
       body: Stack(
-        children: [],
+        children: [
+          Column(
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(top: 40),
+                child: Row(
+                  children: [
+                    IconButton(
+                      onPressed: () => _scaffoldKey.currentState!.openDrawer(),
+                      icon: const Icon(
+                        Icons.menu,
+                        size: 35,
+                        color: AppColors.lightBlackColor,
+                      ),
+                    ),
+                    SizedBox(width: screenWidth / 40),
+                    const Text(
+                      AppStrings.howItWorks,
+                      style: TextStyle(
+                        fontWeight: FontWeight.w600,
+                        color: AppColors.lightBlackColor,
+                        fontSize: 20,
+                      ),
+                    ),
+                    SizedBox(width: screenWidth / 2),
+                  ],
+                ),
+              ),
+              Row(
+                children: [],
+              ),
+            ],
+          ),
+        ],
       ),
     );
   }

@@ -45,6 +45,7 @@ class AppStrings {
   static const String findABeep = "Find a Beep";
   static const String history = "Wash History";
   static const String payments = "Payments";
+  static const String howItWorks = "How It Works";
   static const String notifications = "Notifications";
   static const String works = "How it Works";
   static const String settings = "Settings";
