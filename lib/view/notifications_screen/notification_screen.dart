@@ -70,10 +70,18 @@ class _NotificationScreenState extends State<NotificationScreen> {
                   );
                 },
               ),
-              const DrawerScreen(
+              DrawerScreen(
                 name: AppStrings.notifications,
                 image: AppAssets.notifications,
                 color: AppColors.lightBlackColor,
+                onPress: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const NotificationScreen(),
+                    ),
+                  );
+                },
               ),
               const DrawerScreen(
                 name: AppStrings.works,
@@ -170,6 +178,56 @@ class _NotificationScreenState extends State<NotificationScreen> {
                         )
                       ],
                     ),
+                  ),
+                ],
+              ),
+              Divider(
+                height: 4,
+                color: AppColors.lightGrey,
+              ),
+              Column(
+                children: [
+                  SizedBox(height: screenHeight / 70),
+                  Row(
+                    children: [
+                      SizedBox(width: screenWidth / 20),
+                      const Text(
+                        AppStrings.bestDeal,
+                        style: TextStyle(
+                          color: AppColors.darkGreenColor,
+                          fontSize: 17,
+                          fontWeight: FontWeight.w700,
+                        ),
+                      ),
+                      SizedBox(width: screenWidth / 2.2),
+                      const Text(
+                        AppStrings.sepDate,
+                        style: TextStyle(
+                          color: AppColors.greyColor,
+                          fontSize: 17,
+                          fontWeight: FontWeight.w700,
+                        ),
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: screenHeight / 40),
+                  const Text(
+                    AppStrings.superDealBestDeal,
+                    style: TextStyle(
+                      color: AppColors.greyColor,
+                      fontSize: 15,
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
+                  SizedBox(height: screenHeight / 40),
+                  Image.asset(
+                    AppAssets.bestDeal,
+                    height: screenHeight / 7.4,
+                  ),
+                  SizedBox(height: screenHeight / 30),
+                  Divider(
+                    height: 4,
+                    color: AppColors.lightGrey,
                   ),
                 ],
               ),

@@ -4,6 +4,7 @@ import '../../res/common/drawer_screens.dart';
 import '../../res/constant/app_assets.dart';
 import '../../res/constant/app_colors.dart';
 import '../../res/constant/app_strings.dart';
+import '../notifications_screen/notification_screen.dart';
 import '../wash_history_screen/wash_history_screen.dart';
 import 'add_payment_method_screen.dart';
 
@@ -70,10 +71,18 @@ class _PaymentScreenState extends State<PaymentScreen> {
                   );
                 },
               ),
-              const DrawerScreen(
+              DrawerScreen(
                 name: AppStrings.notifications,
                 image: AppAssets.notifications,
                 color: AppColors.lightBlackColor,
+                onPress: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const NotificationScreen(),
+                    ),
+                  );
+                },
               ),
               const DrawerScreen(
                 name: AppStrings.works,
