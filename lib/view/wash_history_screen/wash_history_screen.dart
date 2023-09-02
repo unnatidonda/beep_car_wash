@@ -15,7 +15,7 @@ class WashHistoryScreen extends StatefulWidget {
 }
 
 class _WashHistoryScreenState extends State<WashHistoryScreen> {
-  final GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();
+  final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
   Map mapdata = {
     "text": "",
   };
@@ -55,7 +55,7 @@ class _WashHistoryScreenState extends State<WashHistoryScreen> {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-    double screenHeight = size.height;
+     double screenHeight = size.height;
     double screenWidth = size.width;
     EdgeInsets devicePadding = MediaQuery.of(context).viewPadding;
     return Scaffold(

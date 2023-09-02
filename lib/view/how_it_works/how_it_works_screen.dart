@@ -133,8 +133,12 @@ class _HowItWorksScreenState extends State<HowItWorksScreen> {
                   ],
                 ),
               ),
-              Row(
-                children: [],
+              Column(
+                children: [
+                  Image.asset(
+                    AppAssets.
+                  )
+                ],
               ),
             ],
           ),
