@@ -136,7 +136,22 @@ class _HowItWorksScreenState extends State<HowItWorksScreen> {
               Column(
                 children: [
                   Image.asset(
-                    AppAssets.
+                    AppAssets.scanning,
+                    height: screenHeight / 6,
+                    width: screenWidth / 3,
+                  ),
+                  SizedBox(width: screenWidth / 12),
+                  const Align(
+                    alignment: Alignment.centerLeft,
+                    child: Text(
+                      textAlign: TextAlign.start,
+                      AppStrings.scanning,
+                      style: TextStyle(
+                        color: AppColors.lightBlackColor,
+                        fontWeight: FontWeight.w700,
+                        fontSize: 20,
+                      ),
+                    ),
                   )
                 ],
               ),
