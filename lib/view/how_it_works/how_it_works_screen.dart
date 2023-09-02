@@ -141,17 +141,31 @@ class _HowItWorksScreenState extends State<HowItWorksScreen> {
                     width: screenWidth / 3,
                   ),
                   SizedBox(width: screenWidth / 12),
-                  const Align(
-                    alignment: Alignment.centerLeft,
-                    child: Text(
-                      textAlign: TextAlign.start,
-                      AppStrings.scanning,
-                      style: TextStyle(
-                        color: AppColors.lightBlackColor,
-                        fontWeight: FontWeight.w700,
-                        fontSize: 20,
+                  const Padding(
+                    padding: EdgeInsets.only(left: 26),
+                    child: Align(
+                      alignment: Alignment.centerLeft,
+                      child: Text(
+                        textAlign: TextAlign.start,
+                        AppStrings.scanning,
+                        style: TextStyle(
+                          color: AppColors.lightBlackColor,
+                          fontWeight: FontWeight.w700,
+                          fontSize: 20,
+                        ),
                       ),
                     ),
+                  ),
+                  Row(
+                    children: [
+                      SizedBox(width: screenWidth / 20),
+                      Image.asset(
+                        AppAssets.circleCheck,
+                        width: screenWidth / 12,
+                        height: screenHeight / 17,
+                      ),
+                      // Text(AppS)
+                    ],
                   )
                 ],
               ),

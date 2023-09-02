@@ -35,6 +35,7 @@ class AppAssets {
   static const String blower = "assets/images/Blower.png";
   static const String vacuum = "assets/images/vacuum.png";
   static const String handWash = "assets/images/Hand_Wash.png";
+  static const String circleCheck = "assets/images/circle_check.png";
   static const String card = "assets/images/card.png";
   static const String bestDeal = "assets/images/best_deal.png";
   static const String paymentImage = "assets/images/payment_image.png";
