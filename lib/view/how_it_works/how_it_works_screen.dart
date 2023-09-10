@@ -164,7 +164,34 @@ class _HowItWorksScreenState extends State<HowItWorksScreen> {
                         width: screenWidth / 12,
                         height: screenHeight / 17,
                       ),
-                      // Text(AppS)
+                      SizedBox(width: screenWidth / 40),
+                      const Text(
+                        AppStrings.blueTick,
+                        style: TextStyle(
+                          fontSize: 17,
+                          fontWeight: FontWeight.w600,
+                          color: AppColors.greyColor,
+                        ),
+                      )
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      SizedBox(width: screenWidth / 20),
+                      Image.asset(
+                        AppAssets.circleCheck,
+                        width: screenWidth / 12,
+                        height: screenHeight / 17,
+                      ),
+                      SizedBox(width: screenWidth / 40),
+                      const Text(
+                        AppStrings.blueTickSecond,
+                        style: TextStyle(
+                          fontSize: 17,
+                          fontWeight: FontWeight.w600,
+                          color: AppColors.greyColor,
+                        ),
+                      )
                     ],
                   )
                 ],
