@@ -141,7 +141,7 @@ class _HowItWorksScreenState extends State<HowItWorksScreen> {
                     width: screenWidth / 3,
                   ),
                   SizedBox(width: screenWidth / 12),
-                  const Padding(
+                  Padding(
                     padding: EdgeInsets.only(left: 26),
                     child: Align(
                       alignment: Alignment.centerLeft,
