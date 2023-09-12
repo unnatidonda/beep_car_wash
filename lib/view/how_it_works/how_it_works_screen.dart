@@ -85,7 +85,7 @@ class _HowItWorksScreenState extends State<HowItWorksScreen> {
                   );
                 },
               ),
-              const DrawerScreen(
+              DrawerScreen(
                 name: AppStrings.works,
                 image: AppAssets.howItWorks,
                 color: AppColors.lightBlackColor,
