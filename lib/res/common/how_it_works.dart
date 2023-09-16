@@ -5,7 +5,10 @@ import '../constant/app_colors.dart';
 import '../constant/app_strings.dart';
 
 class HowItWorks extends StatelessWidget {
-  const HowItWorks({super.key});
+  final String? image;
+  final String? text;
+  final String? name;
+  const HowItWorks({super.key, this.image, this.text, this.name});
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +26,7 @@ class HowItWorks extends StatelessWidget {
               width: screenWidth / 3,
             ),
             SizedBox(width: screenWidth / 12),
-            Padding(
+            const Padding(
               padding: EdgeInsets.only(left: 26),
               child: Align(
                 alignment: Alignment.centerLeft,
@@ -46,7 +49,15 @@ class HowItWorks extends StatelessWidget {
                   width: screenWidth / 12,
                   height: screenHeight / 17,
                 ),
-                // Text(AppS)
+                SizedBox(width: screenWidth / 40),
+                const Text(
+                  AppStrings.blueTickSecond,
+                  style: TextStyle(
+                    fontSize: 17,
+                    fontWeight: FontWeight.w600,
+                    color: AppColors.greyColor,
+                  ),
+                )
               ],
             )
           ],
