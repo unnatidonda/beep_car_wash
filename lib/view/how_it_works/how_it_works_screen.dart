@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../res/common/drawer_screens.dart';
+import '../../res/common/how_it_works.dart';
 import '../../res/constant/app_assets.dart';
 import '../../res/constant/app_colors.dart';
 import '../../res/constant/app_strings.dart';
@@ -106,94 +107,60 @@ class _HowItWorksScreenState extends State<HowItWorksScreen> {
       ),
       body: Stack(
         children: [
-          Column(
+          ListView(
             children: [
-              Padding(
-                padding: const EdgeInsets.only(top: 40),
-                child: Row(
-                  children: [
-                    IconButton(
-                      onPressed: () => _scaffoldKey.currentState!.openDrawer(),
-                      icon: const Icon(
-                        Icons.menu,
-                        size: 35,
-                        color: AppColors.lightBlackColor,
-                      ),
-                    ),
-                    SizedBox(width: screenWidth / 40),
-                    const Text(
-                      AppStrings.howItWorks,
-                      style: TextStyle(
-                        fontWeight: FontWeight.w600,
-                        color: AppColors.lightBlackColor,
-                        fontSize: 20,
-                      ),
-                    ),
-                    SizedBox(width: screenWidth / 2),
-                  ],
-                ),
-              ),
               Column(
                 children: [
-                  Image.asset(
-                    AppAssets.scanning,
-                    height: screenHeight / 6,
-                    width: screenWidth / 3,
-                  ),
-                  SizedBox(width: screenWidth / 12),
-                  const Padding(
-                    padding: EdgeInsets.only(left: 26),
-                    child: Align(
-                      alignment: Alignment.centerLeft,
-                      child: Text(
-                        textAlign: TextAlign.start,
-                        AppStrings.scanning,
-                        style: TextStyle(
-                          color: AppColors.lightBlackColor,
-                          fontWeight: FontWeight.w700,
-                          fontSize: 20,
+                  Padding(
+                    padding: const EdgeInsets.only(top: 40),
+                    child: Row(
+                      children: [
+                        IconButton(
+                          onPressed: () => _scaffoldKey.currentState!.openDrawer(),
+                          icon: const Icon(
+                            Icons.menu,
+                            size: 35,
+                            color: AppColors.lightBlackColor,
+                          ),
                         ),
-                      ),
+                        SizedBox(width: screenWidth / 40),
+                        const Text(
+                          AppStrings.howItWorks,
+                          style: TextStyle(
+                            fontWeight: FontWeight.w600,
+                            color: AppColors.lightBlackColor,
+                            fontSize: 20,
+                          ),
+                        ),
+                        SizedBox(width: screenWidth / 2),
+                      ],
                     ),
                   ),
-                  Row(
+                  const Column(
                     children: [
-                      SizedBox(width: screenWidth / 20),
-                      Image.asset(
-                        AppAssets.circleCheck,
-                        width: screenWidth / 12,
-                        height: screenHeight / 17,
+                      HowItWorks(
+                        image: AppAssets.circleCheck,
+                        mainImage: AppAssets.scanning,
+                        mainName: AppStrings.scanning,
+                        name: AppStrings.blueTick,
+                        secondName: AppStrings.blueTickSecond,
                       ),
-                      SizedBox(width: screenWidth / 40),
-                      const Text(
-                        AppStrings.blueTick,
-                        style: TextStyle(
-                          fontSize: 17,
-                          fontWeight: FontWeight.w600,
-                          color: AppColors.greyColor,
-                        ),
-                      )
+                      HowItWorks(
+                        image: AppAssets.circleCheck,
+                        mainImage: AppAssets.scanning,
+                        mainName: AppStrings.scanning,
+                        name: AppStrings.blueTick,
+                        secondName: AppStrings.blueTickSecond,
+                      ),
+                      HowItWorks(
+                        image: AppAssets.circleCheck,
+                        mainImage: AppAssets.scanning,
+                        mainName: AppStrings.scanning,
+                        name: AppStrings.blueTick,
+                        secondName: AppStrings.blueTickSecond,
+                      ),
                     ],
                   ),
-                  Row(
-                    children: [
-                      SizedBox(width: screenWidth / 20),
-                      Image.asset(
-                        AppAssets.circleCheck,
-                        width: screenWidth / 12,
-                        height: screenHeight / 17,
-                      ),
-                      SizedBox(width: screenWidth / 40),
-                      const Text(
-                        AppStrings.blueTickSecond,
-                        style: TextStyle(
-                          fontSize: 17,
-                          fontWeight: FontWeight.w600,
-                          color: AppColors.greyColor,
-                        ),
-                      )
-                    ],
-                  )
                 ],
               ),
             ],

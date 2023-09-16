@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
-import '../constant/app_assets.dart';
 import '../constant/app_colors.dart';
-import '../constant/app_strings.dart';
 
 class HowItWorks extends StatelessWidget {
   final String? image;
-  final String? text;
+  final String? mainImage;
+  final String? mainName;
   final String? name;
-  const HowItWorks({super.key, this.image, this.text, this.name});
+  final String? secondName;
+  const HowItWorks({super.key, this.image, this.mainName, this.name, this.mainImage, this.secondName});
 
   @override
   Widget build(BuildContext context) {
@@ -21,19 +21,19 @@ class HowItWorks extends StatelessWidget {
         Column(
           children: [
             Image.asset(
-              AppAssets.scanning,
+              mainImage ?? "",
               height: screenHeight / 6,
               width: screenWidth / 3,
             ),
             SizedBox(width: screenWidth / 12),
-            const Padding(
+            Padding(
               padding: EdgeInsets.only(left: 26),
               child: Align(
                 alignment: Alignment.centerLeft,
                 child: Text(
                   textAlign: TextAlign.start,
-                  AppStrings.scanning,
-                  style: TextStyle(
+                  mainName ?? "",
+                  style: const TextStyle(
                     color: AppColors.lightBlackColor,
                     fontWeight: FontWeight.w700,
                     fontSize: 20,
@@ -45,14 +45,33 @@ class HowItWorks extends StatelessWidget {
               children: [
                 SizedBox(width: screenWidth / 20),
                 Image.asset(
-                  AppAssets.circleCheck,
+                  image ?? "",
                   width: screenWidth / 12,
                   height: screenHeight / 17,
                 ),
                 SizedBox(width: screenWidth / 40),
-                const Text(
-                  AppStrings.blueTickSecond,
-                  style: TextStyle(
+                Text(
+                  name ?? "",
+                  style: const TextStyle(
+                    fontSize: 17,
+                    fontWeight: FontWeight.w600,
+                    color: AppColors.greyColor,
+                  ),
+                )
+              ],
+            ),
+            Row(
+              children: [
+                SizedBox(width: screenWidth / 20),
+                Image.asset(
+                  image ?? "",
+                  width: screenWidth / 12,
+                  height: screenHeight / 17,
+                ),
+                SizedBox(width: screenWidth / 40),
+                Text(
+                  secondName ?? "",
+                  style: const TextStyle(
                     fontSize: 17,
                     fontWeight: FontWeight.w600,
                     color: AppColors.greyColor,
