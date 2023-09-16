@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 
 import '../../res/constant/app_assets.dart';
 import '../../res/constant/app_strings.dart';
+import '../how_it_works/how_it_works_screen.dart';
 import '../payment_screens/payment_screen.dart';
 import '../wash_history_screen/wash_history_screen.dart';
 
@@ -83,10 +84,18 @@ class _NotificationScreenState extends State<NotificationScreen> {
                   );
                 },
               ),
-              const DrawerScreen(
+              DrawerScreen(
                 name: AppStrings.works,
                 image: AppAssets.howItWorks,
                 color: AppColors.lightBlackColor,
+                onPress: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const HowItWorksScreen(),
+                    ),
+                  );
+                },
               ),
               const DrawerScreen(
                 name: AppStrings.settings,

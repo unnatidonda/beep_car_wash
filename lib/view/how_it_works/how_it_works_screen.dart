@@ -86,10 +86,18 @@ class _HowItWorksScreenState extends State<HowItWorksScreen> {
                   );
                 },
               ),
-              const DrawerScreen(
+              DrawerScreen(
                 name: AppStrings.works,
                 image: AppAssets.howItWorks,
                 color: AppColors.lightBlackColor,
+                onPress: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const HowItWorksScreen(),
+                    ),
+                  );
+                },
               ),
               const DrawerScreen(
                 name: AppStrings.settings,
@@ -147,15 +155,36 @@ class _HowItWorksScreenState extends State<HowItWorksScreen> {
                       ),
                       HowItWorks(
                         image: AppAssets.circleCheck,
-                        mainImage: AppAssets.scanning,
-                        mainName: AppStrings.scanning,
+                        mainImage: AppAssets.waterFunction,
+                        mainName: AppStrings.function,
                         name: AppStrings.blueTick,
                         secondName: AppStrings.blueTickSecond,
                       ),
                       HowItWorks(
                         image: AppAssets.circleCheck,
-                        mainImage: AppAssets.scanning,
-                        mainName: AppStrings.scanning,
+                        mainImage: AppAssets.formFunction,
+                        mainName: AppStrings.formFunction,
+                        name: AppStrings.blueTick,
+                        secondName: AppStrings.blueTickSecond,
+                      ),
+                      HowItWorks(
+                        image: AppAssets.circleCheck,
+                        mainImage: AppAssets.blower,
+                        mainName: AppStrings.carFuction,
+                        name: AppStrings.blueTick,
+                        secondName: AppStrings.blueTickSecond,
+                      ),
+                      HowItWorks(
+                        image: AppAssets.circleCheck,
+                        mainImage: AppAssets.vacuum,
+                        mainName: AppStrings.vacuumFunction,
+                        name: AppStrings.blueTick,
+                        secondName: AppStrings.blueTickSecond,
+                      ),
+                      HowItWorks(
+                        image: AppAssets.circleCheck,
+                        mainImage: AppAssets.handWash,
+                        mainName: AppStrings.washFunction,
                         name: AppStrings.blueTick,
                         secondName: AppStrings.blueTickSecond,
                       ),

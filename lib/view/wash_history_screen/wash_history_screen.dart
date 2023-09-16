@@ -4,6 +4,7 @@ import '../../res/common/drawer_screens.dart';
 import '../../res/constant/app_assets.dart';
 import '../../res/constant/app_colors.dart';
 import '../../res/constant/app_strings.dart';
+import '../how_it_works/how_it_works_screen.dart';
 import '../notifications_screen/notification_screen.dart';
 import '../payment_screens/payment_screen.dart';
 
@@ -55,7 +56,7 @@ class _WashHistoryScreenState extends State<WashHistoryScreen> {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-     double screenHeight = size.height;
+    double screenHeight = size.height;
     double screenWidth = size.width;
     EdgeInsets devicePadding = MediaQuery.of(context).viewPadding;
     return Scaffold(
@@ -119,10 +120,18 @@ class _WashHistoryScreenState extends State<WashHistoryScreen> {
                   );
                 },
               ),
-              const DrawerScreen(
+              DrawerScreen(
                 name: AppStrings.works,
                 image: AppAssets.howItWorks,
                 color: AppColors.lightBlackColor,
+                onPress: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const HowItWorksScreen(),
+                    ),
+                  );
+                },
               ),
               const DrawerScreen(
                 name: AppStrings.settings,

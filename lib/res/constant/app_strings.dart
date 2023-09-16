@@ -69,6 +69,11 @@ class AppStrings {
   static const String chooseAPaymentMethod = "Choose a Payment Method";
   static const String primary = "Primary";
   static const String cVV = "CVV";
+  static const String washFunction = "Using the hand wash function";
+  static const String vacuumFunction = "Using the vacuum function";
+  static const String formFunction = "Using the foam function";
+  static const String carFuction = "Using the blow dry the car function";
+  static const String function = "Using the water function";
   static const String bestDeal = "Best Deal";
   static const String superDeal = "Super Deal";
   static const String addPayment = "Add Payment";
