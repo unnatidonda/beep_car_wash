@@ -135,7 +135,7 @@ class _HowItWorksScreenState extends State<HowItWorksScreen> {
                         const Text(
                           AppStrings.howItWorks,
                           style: TextStyle(
-                            fontWeight: FontWeight.,
+                            fontWeight: FontWeight.w600,
                             color: AppColors.lightBlackColor,
                             fontSize: 20,
                           ),
