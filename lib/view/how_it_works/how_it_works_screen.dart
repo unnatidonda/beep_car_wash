@@ -140,7 +140,7 @@ class _HowItWorksScreenState extends State<HowItWorksScreen> {
                             fontSize: 20,
                           ),
                         ),
-                        SizedBox(width: screenWidth / 20),
+                        SizedBox(width: screenWidth / 2),
                       ],
                     ),
                   ),
