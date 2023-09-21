@@ -137,7 +137,7 @@ class _HowItWorksScreenState extends State<HowItWorksScreen> {
                           style: TextStyle(
                             fontWeight: FontWeight.w600,
                             color: AppColors.lightBlackColor,
-                            fontSize: 20,
+                            fontSize: scree20,
                           ),
                         ),
                         SizedBox(width: screenWidth / 2),
