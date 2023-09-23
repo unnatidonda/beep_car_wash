@@ -62,6 +62,14 @@ class AppStrings {
   static const String currentBalance = "Current Balance";
   static const String mastercard = "Mastercard";
   static const String visa = "Visa";
+  static const String nextWash = "The free wash will be automatically applied \non your next wash";
+  static const String freeBeepWash = "You and your friend both enjoy a free beep \n wash on your next wash";
+  static const String freeWash = "Both earn a free wash";
+  static const String beepLoveOnes = "Enjoy Beep with your friends and love\n ones";
+  static const String firstWash = "They use your code below on their first wash";
+  static const String inviteeCode = "Invite friends by sharing your code";
+  static const String personalFriend = "Share your personal code with your friends. After\n they get their first beep wash, you both earn a free wash";
+  static const String inviteFriend = "Invite Friend";
   static const String termsApply = "Terms apply";
   static const String withdrawal = "Your \$100 will be added to your earnings and\n be  available for withdrawal immediately";
   static const String bothEarn = "You both earn \$100!";

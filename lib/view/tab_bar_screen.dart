@@ -162,7 +162,7 @@ class TabBarDemo extends StatelessWidget {
                     height: screenHeight / 4.5,
                     // width: screenWidth / 5.5,
                   ),
-                  SizedBox(height: screenHeight / 60),
+                  SizedBox(height: screenHeight / 80),
                   const Text(
                     AppStrings.spreadTheWealth,
                     style: TextStyle(
@@ -327,21 +327,275 @@ class TabBarDemo extends StatelessWidget {
                   ),
                   SizedBox(height: screenHeight / 60),
                   TextButton(
-                      onPressed: () {},
-                      child: const Text(
-                        "termsApply",
-                        style: TextStyle(
-                          color: AppColors.darkGreenColor,
-                          fontSize: 17,
-                          fontWeight: FontWeight.w600,
+                    onPressed: () {},
+                    child: const Text(
+                      "termsApply",
+                      style: TextStyle(
+                        color: AppColors.darkGreenColor,
+                        fontSize: 17,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                  ),
+                  SizedBox(height: screenHeight / 40),
+                  ElevatedButton(
+                    style: ButtonStyle(
+                      backgroundColor: const MaterialStatePropertyAll(AppColors.darkGreenColor),
+                      fixedSize: MaterialStatePropertyAll(
+                        Size(screenWidth / 1.1, screenHeight / 16),
+                      ),
+                      shape: MaterialStatePropertyAll(
+                        RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+                      ),
+                    ),
+                    // onPressed: onPress ?? () {},
+                    onPressed: () {
+                      // Navigator.push(
+                      //   context,
+                      //   MaterialPageRoute(
+                      //     builder: (context) => const AddPaymentMethodScreen(),
+                      //   ),
+                      // );
+                    },
+                    child: const Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
+                          textAlign: TextAlign.center,
+                          AppStrings.inviteFriend,
+                          style: TextStyle(
+                            fontSize: 17,
+                            color: AppColors.whiteColor,
+                            fontWeight: FontWeight.w500,
+                            fontFamily: "Poppins",
+                          ),
                         ),
-                      ))
+                      ],
+                    ),
+                  ),
                 ],
               ),
-              const Icon(
-                Icons.directions_transit,
-                color: AppColors.lightBlackColor,
-              ),
+              Column(
+                children: [
+                  Image.asset(
+                    AppAssets.addFriend,
+                    width: screenWidth / 2.3,
+                    height: screenHeight / 4.5,
+                  ),
+                  SizedBox(height: screenHeight / 60),
+                  const Text(
+                    AppStrings.spreadTheWealth,
+                    style: TextStyle(
+                      fontWeight: FontWeight.w700,
+                      fontSize: 28,
+                      color: AppColors.lightBlackColor,
+                    ),
+                  ),
+                  SizedBox(height: screenHeight / 70),
+                  const Text(
+                    textAlign: TextAlign.center,
+                    AppStrings.personalFriend,
+                    style: TextStyle(
+                      fontWeight: FontWeight.w500,
+                      fontSize: 15,
+                      color: AppColors.greyColor,
+                    ),
+                  ),
+                  SizedBox(height: screenHeight / 40),
+                  Row(
+                    children: [
+                      SizedBox(width: screenWidth / 20),
+                      Container(
+                        height: 46,
+                        width: 46,
+                        decoration: BoxDecoration(
+                          color: AppColors.lightGreen,
+                          borderRadius: BorderRadius.circular(100),
+                        ),
+                        child: const Center(
+                          child: Text(
+                            textAlign: TextAlign.center,
+                            "1",
+                            style: TextStyle(
+                              color: AppColors.darkGreenColor,
+                              fontSize: 17,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
+                      ),
+                      SizedBox(width: screenWidth / 20),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          const Text(
+                            AppStrings.inviteeCode,
+                            style: TextStyle(
+                              fontWeight: FontWeight.w700,
+                              fontSize: 17,
+                              color: AppColors.lightBlackColor,
+                            ),
+                          ),
+                          SizedBox(height: screenHeight / 100),
+                          const Text(
+                            AppStrings.firstWash,
+                            style: TextStyle(
+                              fontWeight: FontWeight.w700,
+                              fontSize: 15,
+                              color: AppColors.greyColor,
+                            ),
+                          ),
+                        ],
+                      )
+                    ],
+                  ),
+                  SizedBox(height: screenHeight / 40),
+                  Row(
+                    children: [
+                      SizedBox(width: screenWidth / 20),
+                      Container(
+                        height: 46,
+                        width: 46,
+                        decoration: BoxDecoration(
+                          color: AppColors.lightGreen,
+                          borderRadius: BorderRadius.circular(100),
+                        ),
+                        child: const Center(
+                          child: Text(
+                            textAlign: TextAlign.center,
+                            "2",
+                            style: TextStyle(
+                              color: AppColors.darkGreenColor,
+                              fontSize: 17,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
+                      ),
+                      SizedBox(width: screenWidth / 20),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          const Text(
+                            textAlign: TextAlign.start,
+                            AppStrings.freeWash,
+                            style: TextStyle(
+                              fontWeight: FontWeight.w700,
+                              fontSize: 17,
+                              color: AppColors.lightBlackColor,
+                            ),
+                          ),
+                          SizedBox(height: screenHeight / 100),
+                          const Text(
+                            AppStrings.freeBeepWash,
+                            style: TextStyle(
+                              fontWeight: FontWeight.w700,
+                              fontSize: 15,
+                              color: AppColors.greyColor,
+                            ),
+                          ),
+                        ],
+                      )
+                    ],
+                  ),
+                  SizedBox(height: screenHeight / 40),
+                  Row(
+                    children: [
+                      SizedBox(width: screenWidth / 20),
+                      Container(
+                        height: 46,
+                        width: 46,
+                        decoration: BoxDecoration(
+                          color: AppColors.lightGreen,
+                          borderRadius: BorderRadius.circular(100),
+                        ),
+                        child: const Center(
+                          child: Text(
+                            textAlign: TextAlign.center,
+                            "3",
+                            style: TextStyle(
+                              color: AppColors.darkGreenColor,
+                              fontSize: 17,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
+                      ),
+                      SizedBox(width: screenWidth / 20),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          const Text(
+                            AppStrings.beepLoveOnes,
+                            style: TextStyle(
+                              fontWeight: FontWeight.w700,
+                              fontSize: 17,
+                              color: AppColors.lightBlackColor,
+                            ),
+                          ),
+                          SizedBox(height: screenHeight / 100),
+                          const Text(
+                            AppStrings.nextWash,
+                            style: TextStyle(
+                              fontWeight: FontWeight.w700,
+                              fontSize: 15,
+                              color: AppColors.greyColor,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: screenHeight / 60),
+                  TextButton(
+                    onPressed: () {},
+                    child: const Text(
+                      "termsApply",
+                      style: TextStyle(
+                        color: AppColors.darkGreenColor,
+                        fontSize: 17,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                  ),
+                  SizedBox(height: screenHeight / 40),
+                  ElevatedButton(
+                    style: ButtonStyle(
+                      backgroundColor: const MaterialStatePropertyAll(AppColors.darkGreenColor),
+                      fixedSize: MaterialStatePropertyAll(
+                        Size(screenWidth / 1.1, screenHeight / 16),
+                      ),
+                      shape: MaterialStatePropertyAll(
+                        RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+                      ),
+                    ),
+                    // onPressed: onPress ?? () {},
+                    onPressed: () {
+                      // Navigator.push(
+                      //   context,
+                      //   MaterialPageRoute(
+                      //     builder: (context) => const AddPaymentMethodScreen(),
+                      //   ),
+                      // );
+                    },
+                    child: const Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
+                          textAlign: TextAlign.center,
+                          AppStrings.inviteFriend,
+                          style: TextStyle(
+                            fontSize: 17,
+                            color: AppColors.whiteColor,
+                            fontWeight: FontWeight.w500,
+                            fontFamily: "Poppins",
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              )
             ],
           ),
         ),
