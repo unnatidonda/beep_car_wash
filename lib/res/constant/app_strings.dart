@@ -62,6 +62,16 @@ class AppStrings {
   static const String currentBalance = "Current Balance";
   static const String mastercard = "Mastercard";
   static const String visa = "Visa";
+  static const String operator = "Share your personal code with potential operators.\n After they get their first beep wash booking, you both\n earn a \$100 each!";
+  static const String spreadTheWealth = "Spread The Wealth";
+  static const String inviteFriends = "Invite Friends";
+  static const String referOperator = "Refer Operator";
+  static const String referral = "Referral";
+  static const String lonrenIpsum = "Lorem ipsum dolor sit amet, consectetur\n adipiscing elit, sed do eiusmod tempor incididunt\n ut labore et dolore magna aliqua.";
+  static const String ipsum = "Lorem Ipsum";
+  static const String lonren =
+      "Lorem ipsum dolor sit amet, consectetur \nadipiscing elit, sed do eiusmod tempor incididunt \nut labore et dolore magna aliqua. Ut enim ad \nminim veniam, quis nostrud exercitation ullamco \nlaboris nisi ut aliquip ex ea commodo consequat. \nDuis aute irure dolor in\n reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla\n pariatur. Excepteur sint occaecat cupidatat non\n proident, sunt in culpa qui officia deserunt mollit \nanim id est laborum.";
+  static const String lorenIpsum = "Lorem Ipsum";
   static const String privacyAndPolicy = "Privacy and Policy";
   static const String superDealBestDeal = "Lorem ipsum dolor sit amet, consectetur adipiscing elit,  \n sed do eiusmod tempor incididunt ut labore et dolore";
   static const String sepDate = "Tue, Sep 13";

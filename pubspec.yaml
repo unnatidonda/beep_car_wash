@@ -72,6 +72,7 @@ flutter:
     - assets/images/wash_your_car.png
     - assets/images/logos_visa.png
     - assets/images/apple_logo.png
+
 #     - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
