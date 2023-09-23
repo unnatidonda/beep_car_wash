@@ -180,7 +180,162 @@ class TabBarDemo extends StatelessWidget {
                       fontSize: 15,
                       color: AppColors.greyColor,
                     ),
-                  )
+                  ),
+                  SizedBox(height: screenHeight / 40),
+                  Row(
+                    children: [
+                      SizedBox(width: screenWidth / 20),
+                      Container(
+                        height: 46,
+                        width: 46,
+                        decoration: BoxDecoration(
+                          color: AppColors.lightGreen,
+                          borderRadius: BorderRadius.circular(100),
+                        ),
+                        child: const Center(
+                          child: Text(
+                            textAlign: TextAlign.center,
+                            "1",
+                            style: TextStyle(
+                              color: AppColors.darkGreenColor,
+                              fontSize: 17,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
+                      ),
+                      SizedBox(width: screenWidth / 20),
+                      Column(
+                        children: [
+                          const Text(
+                            AppStrings.sharingCode,
+                            style: TextStyle(
+                              fontWeight: FontWeight.w700,
+                              fontSize: 17,
+                              color: AppColors.lightBlackColor,
+                            ),
+                          ),
+                          SizedBox(height: screenHeight / 100),
+                          const Text(
+                            AppStrings.codeApp,
+                            style: TextStyle(
+                              fontWeight: FontWeight.w700,
+                              fontSize: 15,
+                              color: AppColors.greyColor,
+                            ),
+                          ),
+                        ],
+                      )
+                    ],
+                  ),
+                  SizedBox(height: screenHeight / 40),
+                  Row(
+                    children: [
+                      SizedBox(width: screenWidth / 20),
+                      Container(
+                        height: 46,
+                        width: 46,
+                        decoration: BoxDecoration(
+                          color: AppColors.lightGreen,
+                          borderRadius: BorderRadius.circular(100),
+                        ),
+                        child: const Center(
+                          child: Text(
+                            textAlign: TextAlign.center,
+                            "2",
+                            style: TextStyle(
+                              color: AppColors.darkGreenColor,
+                              fontSize: 17,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
+                      ),
+                      SizedBox(width: screenWidth / 20),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          const Text(
+                            textAlign: TextAlign.start,
+                            AppStrings.beepOperation,
+                            style: TextStyle(
+                              fontWeight: FontWeight.w700,
+                              fontSize: 17,
+                              color: AppColors.lightBlackColor,
+                            ),
+                          ),
+                          SizedBox(height: screenHeight / 100),
+                          const Text(
+                            AppStrings.onceBeepOperation,
+                            style: TextStyle(
+                              fontWeight: FontWeight.w700,
+                              fontSize: 15,
+                              color: AppColors.greyColor,
+                            ),
+                          ),
+                        ],
+                      )
+                    ],
+                  ),
+                  SizedBox(height: screenHeight / 40),
+                  Row(
+                    children: [
+                      SizedBox(width: screenWidth / 20),
+                      Container(
+                        height: 46,
+                        width: 46,
+                        decoration: BoxDecoration(
+                          color: AppColors.lightGreen,
+                          borderRadius: BorderRadius.circular(100),
+                        ),
+                        child: const Center(
+                          child: Text(
+                            textAlign: TextAlign.center,
+                            "3",
+                            style: TextStyle(
+                              color: AppColors.darkGreenColor,
+                              fontSize: 17,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
+                      ),
+                      SizedBox(width: screenWidth / 20),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          const Text(
+                            AppStrings.bothEarn,
+                            style: TextStyle(
+                              fontWeight: FontWeight.w700,
+                              fontSize: 17,
+                              color: AppColors.lightBlackColor,
+                            ),
+                          ),
+                          SizedBox(height: screenHeight / 100),
+                          const Text(
+                            AppStrings.withdrawal,
+                            style: TextStyle(
+                              fontWeight: FontWeight.w700,
+                              fontSize: 15,
+                              color: AppColors.greyColor,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: screenHeight / 60),
+                  TextButton(
+                      onPressed: () {},
+                      child: const Text(
+                        "termsApply",
+                        style: TextStyle(
+                          color: AppColors.darkGreenColor,
+                          fontSize: 17,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ))
                 ],
               ),
               const Icon(

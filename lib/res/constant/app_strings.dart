@@ -62,6 +62,13 @@ class AppStrings {
   static const String currentBalance = "Current Balance";
   static const String mastercard = "Mastercard";
   static const String visa = "Visa";
+  static const String termsApply = "Terms apply";
+  static const String withdrawal = "Your \$100 will be added to your earnings and\n be  available for withdrawal immediately";
+  static const String bothEarn = "You both earn \$100!";
+  static const String onceBeepOperation = "Once they set up their beep operation and \nreceive their first beep booking you both earn";
+  static const String beepOperation = "Set up their beep operation";
+  static const String codeApp = "They sign up using your code below into the\n app";
+  static const String sharingCode = "Invite operators by sharing your code";
   static const String operator = "Share your personal code with potential operators.\n After they get their first beep wash booking, you both\n earn a \$100 each!";
   static const String spreadTheWealth = "Spread The Wealth";
   static const String inviteFriends = "Invite Friends";
