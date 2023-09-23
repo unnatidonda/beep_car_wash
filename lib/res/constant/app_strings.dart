@@ -62,6 +62,7 @@ class AppStrings {
   static const String currentBalance = "Current Balance";
   static const String mastercard = "Mastercard";
   static const String visa = "Visa";
+  static const String privacyAndPolicy = "Privacy and Policy";
   static const String superDealBestDeal = "Lorem ipsum dolor sit amet, consectetur adipiscing elit,  \n sed do eiusmod tempor incididunt ut labore et dolore";
   static const String sepDate = "Tue, Sep 13";
   static const String cardHolderName = "Card Holder Name";

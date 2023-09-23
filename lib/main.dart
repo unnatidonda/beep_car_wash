@@ -1,4 +1,4 @@
-import 'package:beep_car_wash/view/how_it_works/how_it_works_screen.dart';
+import 'package:beep_car_wash/view/settings_screen/privacy_and_policy_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
         fontFamily: "Poppins",
       ),
-      home: const HowItWorksScreen(),
+      home: const PrivacyAndPolicyScreen(),
     );
   }
 }
