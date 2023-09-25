@@ -29,7 +29,7 @@ class PopUpReferralCodeScreen extends StatelessWidget {
     EdgeInsets devicePadding = MediaQuery.of(context).viewPadding;
     return MaterialApp(
       home: DefaultTabController(
-        length: 3,
+        length: 2,
         child: Scaffold(
           key: _scaffoldKey,
           drawer: Drawer(
