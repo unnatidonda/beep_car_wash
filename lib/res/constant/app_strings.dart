@@ -54,6 +54,8 @@ class AppStrings {
   static const String refer = "Refer and Earn \$100";
   static const String minTime = "4:54 Min";
   static const String price = "\$5.43";
+  static const String setting = "Settings";
+  static const String save = "Save";
   static const String scanning = "Process of scannig the machine";
   static const String blueTick = "Lorem ipsum dolor sit amet, consectetur";
   static const String blueTickSecond = "Lorem ipsum dolor sit amet, consectetur";
