@@ -569,15 +569,15 @@ class PopUpReferralCodeScreen extends StatelessWidget {
                         RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
                       ),
                     ),
-                    // onPressed: onPress ?? () {},
-                    onPressed: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(
-                      //     builder: (context) => const AddPaymentMethodScreen(),
-                      //   ),
-                      // );
-                    },
+                    // onPressed: () {
+                    //   Navigator.push(
+                    //     context,
+                    //     MaterialPageRoute(
+                    //       builder: (context) => const AddPaymentMethodScreen(),
+                    //     ),
+                    //   );
+                    // },
+                    onPressed: () {},
                     child: const Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
