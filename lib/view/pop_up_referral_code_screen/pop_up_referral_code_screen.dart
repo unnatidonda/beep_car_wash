@@ -24,7 +24,7 @@ class PopUpReferralCodeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-    // double screenHeight = size.height;
+    double screenHeight = size.height;
     // double screenWidth = size.width;
     EdgeInsets devicePadding = MediaQuery.of(context).viewPadding;
     return MaterialApp(
