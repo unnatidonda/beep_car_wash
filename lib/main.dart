@@ -1,4 +1,4 @@
-import 'package:beep_car_wash/view/settings_screen/setting_screen.dart';
+import 'package:beep_car_wash/view/pop_up_referral_code_screen/pop_up_referral_code_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
         fontFamily: "Poppins",
       ),
-      home: SettingScreen(),
+      home: const PopUpReferralCodeScreen(),
     );
   }
 }
