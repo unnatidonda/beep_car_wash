@@ -12,7 +12,7 @@ class _MapMarkerScreenState extends State<MapMarkerScreen> {
   LatLng initialLocation = const LatLng(37.422131, -122.084801);
 
   final List<Marker> _marker = <Marker>[
-    Marker(
+    const Marker(
       markerId: MarkerId("1"),
       position: LatLng(33.6844, 73.0479),
       infoWindow: InfoWindow(
